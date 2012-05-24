@@ -1,0 +1,3347 @@
+[zaetoon] - 2011-07-01 00:02:14,396 -  - Servlet Context initialized...
+[zaetoon] - 2011-07-01 00:02:35,198 -  - Registering converter com.bizintelapps.zaetoon.converter.DateConverter@e66db21
+[zaetoon] - 2011-07-01 00:02:35,200 -  - Registering annotation formatter EnumFormatterAnnotationFactory
+[zaetoon] - 2011-07-01 00:02:35,201 -  - Registering annotation formatter FileSizeFormatterAnnotationFactory
+[zaetoon] - 2011-07-01 00:02:35,201 -  - Registering formatter Authorities
+[zaetoon] - 2011-07-01 00:02:35,201 -  - Registering formatter Program
+[zaetoon] - 2011-07-01 00:02:35,202 -  - Registering formatter ProgramStructure
+[zaetoon] - 2011-07-01 00:02:35,202 -  - Registering formatter UserEnrollment
+[zaetoon] - 2011-07-01 00:02:35,202 -  - Registering formatter UserGraduation
+[zaetoon] - 2011-07-01 00:02:35,202 -  - Registering formatter UserProfile
+[zaetoon] - 2011-07-01 00:02:35,203 -  - Registering formatter Users
+[zaetoon] - 2011-07-01 00:02:35,204 -  - Registering default enum formatter for NullRestrictionKind
+[zaetoon] - 2011-07-01 00:02:35,205 -  - Registering default enum formatter for OrderByDirection
+[zaetoon] - 2011-07-01 00:02:35,205 -  - Registering default enum formatter for SearchMode
+[zaetoon] - 2011-07-01 00:02:37,261 -  - Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+[zaetoon] - 2011-07-01 00:02:37,473 - anonymousUser - sessionId=dvbhr7omvu34 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 00:02:37,475 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 00:09:30,897 -  - sessionId=dvbhr7omvu34
+[zaetoon] - 2011-07-01 00:09:30,898 -  - Servlet Context destroyed...
+[zaetoon] - 2011-07-01 00:09:53,692 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 00:09:53,744 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:09:58,047 -  - Unsuccessful: create table REVINFO (REV integer not null auto_increment, REVTSTMP bigint, primary key (REV)) type=InnoDB
+[zaetoon] - 2011-07-01 00:09:58,047 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 5
+[zaetoon] - 2011-07-01 00:09:59,198 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Users
+        */ insert 
+        into
+            users
+            (enabled, password, username) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 00:09:59,223 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Users */ select
+        users0_.username as username3_0_,
+        users0_.enabled as enabled3_0_,
+        users0_.password as password3_0_ 
+    from
+        users users0_ 
+    where
+        users0_.username=?
+[zaetoon] - 2011-07-01 00:09:59,325 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 00:09:59,347 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:09:59,445 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Users
+        */ insert 
+        into
+            users
+            (enabled, password, username) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 00:09:59,448 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Authorities
+        */ insert 
+        into
+            authorities
+            (authority, username) 
+        values
+            (?, ?)
+[zaetoon] - 2011-07-01 00:09:59,450 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Authorities */ select
+        authoritie0_.username as username6_0_,
+        authoritie0_.authority as authority6_0_ 
+    from
+        authorities authoritie0_ 
+    where
+        authoritie0_.username=?
+[zaetoon] - 2011-07-01 00:09:59,497 -  - 
+    /* Named query Users.selectAll */ select
+        users0_.username as username3_,
+        users0_.enabled as enabled3_,
+        users0_.password as password3_ 
+    from
+        users users0_ 
+    where
+        1=1 limit ?
+[zaetoon] - 2011-07-01 00:09:59,511 -  - 
+    /* Named query Users.selectAll.native */ select
+        {account.*} 
+    from
+        users limit ?
+[zaetoon] - 2011-07-01 00:09:59,515 -  - SQL Error: 1064, SQLState: 42000
+[zaetoon] - 2011-07-01 00:09:59,515 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from users limit 500' at line 1
+[zaetoon] - 2011-07-01 00:09:59,528 -  - get returned null with pk=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah
+[zaetoon] - 2011-07-01 00:09:59,538 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:09:59,560 -  - get returned null with pk=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaal
+[zaetoon] - 2011-07-01 00:09:59,570 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:09:59,587 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 00:09:59,597 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:09:59,769 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserProfile
+[zaetoon] - 2011-07-01 00:09:59,771 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserProfile
+        */ insert 
+        into
+            user_profile
+            (city, country, first_name, last_name, title) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 00:09:59,823 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.ProgramStructure
+[zaetoon] - 2011-07-01 00:09:59,824 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.ProgramStructure
+        */ insert 
+        into
+            program_structure
+            (category, days, description, name, prerequisites) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 00:09:59,825 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserGraduation
+[zaetoon] - 2011-07-01 00:09:59,829 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserGraduation
+        */ insert 
+        into
+            user_graduation
+            (graduation_date, program_structure_id, title, user_id) 
+        values
+            (?, ?, ?, ?)
+[zaetoon] - 2011-07-01 00:09:59,856 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserGraduation */ select
+        usergradua0_.id as id1_0_,
+        usergradua0_.graduation_date as graduation2_1_0_,
+        usergradua0_.program_structure_id as program3_1_0_,
+        usergradua0_.title as title1_0_,
+        usergradua0_.user_id as user5_1_0_ 
+    from
+        user_graduation usergradua0_ 
+    where
+        usergradua0_.id=?
+[zaetoon] - 2011-07-01 00:09:59,922 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.Program
+[zaetoon] - 2011-07-01 00:09:59,925 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Program
+        */ insert 
+        into
+            program
+            (program_structure_id, start_date, status) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 00:09:59,928 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Program */ select
+        program0_.id as id5_0_,
+        program0_.program_structure_id as program2_5_0_,
+        program0_.start_date as start3_5_0_,
+        program0_.status as status5_0_ 
+    from
+        program program0_ 
+    where
+        program0_.id=?
+[zaetoon] - 2011-07-01 00:09:59,983 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserEnrollment
+[zaetoon] - 2011-07-01 00:09:59,986 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserEnrollment
+        */ insert 
+        into
+            user_enrollment
+            (program_id, result, user_id) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 00:09:59,988 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserEnrollment */ select
+        userenroll0_.id as id0_0_,
+        userenroll0_.program_id as program2_0_0_,
+        userenroll0_.result as result0_0_,
+        userenroll0_.user_id as user4_0_0_ 
+    from
+        user_enrollment userenroll0_ 
+    where
+        userenroll0_.id=?
+[zaetoon] - 2011-07-01 00:10:00,014 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.ProgramStructure
+[zaetoon] - 2011-07-01 00:10:00,015 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.ProgramStructure
+        */ insert 
+        into
+            program_structure
+            (category, days, description, name, prerequisites) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 00:10:00,028 -  - 
+    /* load com.bizintelapps.zaetoon.domain.ProgramStructure */ select
+        programstr0_.id as id2_0_,
+        programstr0_.category as category2_0_,
+        programstr0_.days as days2_0_,
+        programstr0_.description as descript4_2_0_,
+        programstr0_.name as name2_0_,
+        programstr0_.prerequisites as prerequi6_2_0_ 
+    from
+        program_structure programstr0_ 
+    where
+        programstr0_.id=?
+[zaetoon] - 2011-07-01 00:10:00,086 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserProfile
+[zaetoon] - 2011-07-01 00:10:00,087 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserProfile
+        */ insert 
+        into
+            user_profile
+            (city, country, first_name, last_name, title) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 00:10:00,092 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserProfile */ select
+        userprofil0_.id as id4_0_,
+        userprofil0_.city as city4_0_,
+        userprofil0_.country as country4_0_,
+        userprofil0_.first_name as first4_4_0_,
+        userprofil0_.last_name as last5_4_0_,
+        userprofil0_.title as title4_0_ 
+    from
+        user_profile userprofil0_ 
+    where
+        userprofil0_.id=?
+[zaetoon] - 2011-07-01 00:10:00,108 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 00:10:00,129 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:10:00,200 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 00:10:00,212 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:10:10,967 -  - Unsuccessful: create table REVINFO (REV integer not null auto_increment, REVTSTMP bigint, primary key (REV)) type=InnoDB
+[zaetoon] - 2011-07-01 00:10:10,970 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 5
+[zaetoon] - 2011-07-01 00:10:12,390 -  - Servlet Context initialized...
+[zaetoon] - 2011-07-01 00:12:51,662 -  - Servlet Context destroyed...
+[zaetoon] - 2011-07-01 00:13:07,828 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 00:13:07,879 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:13:12,194 -  - Unsuccessful: create table REVINFO (REV integer not null auto_increment, REVTSTMP bigint, primary key (REV)) type=InnoDB
+[zaetoon] - 2011-07-01 00:13:12,194 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 5
+[zaetoon] - 2011-07-01 00:13:12,195 -  - Unsuccessful: create table authorities_AUD (username varchar(50) not null, REV integer not null, REVTYPE tinyint, authority varchar(50), primary key (username, REV)) type=InnoDB
+[zaetoon] - 2011-07-01 00:13:12,195 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 7
+[zaetoon] - 2011-07-01 00:13:12,196 -  - Unsuccessful: create table program_AUD (id integer not null, REV integer not null, REVTYPE tinyint, program_structure_id integer, start_date date, status varchar(25), primary key (id, REV)) type=InnoDB
+[zaetoon] - 2011-07-01 00:13:12,196 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 9
+[zaetoon] - 2011-07-01 00:13:12,197 -  - Unsuccessful: create table program_structure_AUD (id integer not null, REV integer not null, REVTYPE tinyint, category varchar(200), days integer, description varchar(200), name varchar(50), prerequisites integer, primary key (id, REV)) type=InnoDB
+[zaetoon] - 2011-07-01 00:13:12,197 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 11
+[zaetoon] - 2011-07-01 00:13:12,197 -  - Unsuccessful: create table user_enrollment_AUD (id integer not null, REV integer not null, REVTYPE tinyint, program_id integer, result varchar(50), user_id integer, primary key (id, REV)) type=InnoDB
+[zaetoon] - 2011-07-01 00:13:12,197 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 9
+[zaetoon] - 2011-07-01 00:13:12,197 -  - Unsuccessful: create table user_graduation_AUD (id integer not null, REV integer not null, REVTYPE tinyint, graduation_date date, program_structure_id integer, title varchar(150), user_id integer, primary key (id, REV)) type=InnoDB
+[zaetoon] - 2011-07-01 00:13:12,197 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 10
+[zaetoon] - 2011-07-01 00:13:12,198 -  - Unsuccessful: create table user_profile_AUD (id integer not null, REV integer not null, REVTYPE tinyint, city varchar(80), country varchar(80), first_name varchar(45), last_name varchar(45), title varchar(150), primary key (id, REV)) type=InnoDB
+[zaetoon] - 2011-07-01 00:13:12,198 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 11
+[zaetoon] - 2011-07-01 00:13:12,198 -  - Unsuccessful: create table users_AUD (username varchar(50) not null, REV integer not null, REVTYPE tinyint, enabled bit, password varchar(50), primary key (username, REV)) type=InnoDB
+[zaetoon] - 2011-07-01 00:13:12,210 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 8
+[zaetoon] - 2011-07-01 00:13:12,211 -  - Unsuccessful: alter table authorities_AUD add index FK194AC872DF74E053 (REV), add constraint FK194AC872DF74E053 foreign key (REV) references REVINFO (REV)
+[zaetoon] - 2011-07-01 00:13:12,211 -  - Table 'zaetoon.authorities_aud' doesn't exist
+[zaetoon] - 2011-07-01 00:13:12,212 -  - Unsuccessful: alter table program_AUD add index FK3C406A55DF74E053 (REV), add constraint FK3C406A55DF74E053 foreign key (REV) references REVINFO (REV)
+[zaetoon] - 2011-07-01 00:13:12,212 -  - Table 'zaetoon.program_aud' doesn't exist
+[zaetoon] - 2011-07-01 00:13:12,212 -  - Unsuccessful: alter table program_structure_AUD add index FK56F2A349DF74E053 (REV), add constraint FK56F2A349DF74E053 foreign key (REV) references REVINFO (REV)
+[zaetoon] - 2011-07-01 00:13:12,212 -  - Table 'zaetoon.program_structure_aud' doesn't exist
+[zaetoon] - 2011-07-01 00:13:12,213 -  - Unsuccessful: alter table user_enrollment_AUD add index FKF7B381C9DF74E053 (REV), add constraint FKF7B381C9DF74E053 foreign key (REV) references REVINFO (REV)
+[zaetoon] - 2011-07-01 00:13:12,213 -  - Table 'zaetoon.user_enrollment_aud' doesn't exist
+[zaetoon] - 2011-07-01 00:13:12,213 -  - Unsuccessful: alter table user_graduation_AUD add index FK70A12D33DF74E053 (REV), add constraint FK70A12D33DF74E053 foreign key (REV) references REVINFO (REV)
+[zaetoon] - 2011-07-01 00:13:12,214 -  - Table 'zaetoon.user_graduation_aud' doesn't exist
+[zaetoon] - 2011-07-01 00:13:12,216 -  - Unsuccessful: alter table user_profile_AUD add index FKAD9CAC86DF74E053 (REV), add constraint FKAD9CAC86DF74E053 foreign key (REV) references REVINFO (REV)
+[zaetoon] - 2011-07-01 00:13:12,216 -  - Table 'zaetoon.user_profile_aud' doesn't exist
+[zaetoon] - 2011-07-01 00:13:12,217 -  - Unsuccessful: alter table users_AUD add index FK154C77D9DF74E053 (REV), add constraint FK154C77D9DF74E053 foreign key (REV) references REVINFO (REV)
+[zaetoon] - 2011-07-01 00:13:12,217 -  - Table 'zaetoon.users_aud' doesn't exist
+[zaetoon] - 2011-07-01 00:13:13,394 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Users
+        */ insert 
+        into
+            users
+            (enabled, password, username) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 00:13:13,420 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Users */ select
+        users0_.username as username2_0_,
+        users0_.enabled as enabled2_0_,
+        users0_.password as password2_0_ 
+    from
+        users users0_ 
+    where
+        users0_.username=?
+[zaetoon] - 2011-07-01 00:13:13,533 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 00:13:13,552 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:13:13,629 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Users
+        */ insert 
+        into
+            users
+            (enabled, password, username) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 00:13:13,633 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Authorities
+        */ insert 
+        into
+            authorities
+            (authority, username) 
+        values
+            (?, ?)
+[zaetoon] - 2011-07-01 00:13:13,635 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Authorities */ select
+        authoritie0_.username as username4_0_,
+        authoritie0_.authority as authority4_0_ 
+    from
+        authorities authoritie0_ 
+    where
+        authoritie0_.username=?
+[zaetoon] - 2011-07-01 00:13:13,673 -  - 
+    /* Named query Users.selectAll */ select
+        users0_.username as username2_,
+        users0_.enabled as enabled2_,
+        users0_.password as password2_ 
+    from
+        users users0_ 
+    where
+        1=1 limit ?
+[zaetoon] - 2011-07-01 00:13:13,686 -  - 
+    /* Named query Users.selectAll.native */ select
+        {account.*} 
+    from
+        users limit ?
+[zaetoon] - 2011-07-01 00:13:13,689 -  - SQL Error: 1064, SQLState: 42000
+[zaetoon] - 2011-07-01 00:13:13,690 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from users limit 500' at line 1
+[zaetoon] - 2011-07-01 00:13:13,702 -  - get returned null with pk=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah
+[zaetoon] - 2011-07-01 00:13:13,711 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:13:13,735 -  - get returned null with pk=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaal
+[zaetoon] - 2011-07-01 00:13:13,744 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:13:13,763 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 00:13:13,781 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:13:13,945 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserProfile
+[zaetoon] - 2011-07-01 00:13:13,946 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserProfile
+        */ insert 
+        into
+            user_profile
+            (city, country, first_name, last_name, title) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 00:13:13,953 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.ProgramStructure
+[zaetoon] - 2011-07-01 00:13:13,954 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.ProgramStructure
+        */ insert 
+        into
+            program_structure
+            (category, days, description, name, prerequisites) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 00:13:13,956 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserGraduation
+[zaetoon] - 2011-07-01 00:13:13,960 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserGraduation
+        */ insert 
+        into
+            user_graduation
+            (graduation_date, program_structure_id, title, user_id) 
+        values
+            (?, ?, ?, ?)
+[zaetoon] - 2011-07-01 00:13:13,965 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserGraduation */ select
+        usergradua0_.id as id5_0_,
+        usergradua0_.graduation_date as graduation2_5_0_,
+        usergradua0_.program_structure_id as program3_5_0_,
+        usergradua0_.title as title5_0_,
+        usergradua0_.user_id as user5_5_0_ 
+    from
+        user_graduation usergradua0_ 
+    where
+        usergradua0_.id=?
+[zaetoon] - 2011-07-01 00:13:14,019 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.Program
+[zaetoon] - 2011-07-01 00:13:14,022 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Program
+        */ insert 
+        into
+            program
+            (program_structure_id, start_date, status) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 00:13:14,028 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Program */ select
+        program0_.id as id1_0_,
+        program0_.program_structure_id as program2_1_0_,
+        program0_.start_date as start3_1_0_,
+        program0_.status as status1_0_ 
+    from
+        program program0_ 
+    where
+        program0_.id=?
+[zaetoon] - 2011-07-01 00:13:14,106 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserEnrollment
+[zaetoon] - 2011-07-01 00:13:14,109 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserEnrollment
+        */ insert 
+        into
+            user_enrollment
+            (program_id, result, user_id) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 00:13:14,111 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserEnrollment */ select
+        userenroll0_.id as id6_0_,
+        userenroll0_.program_id as program2_6_0_,
+        userenroll0_.result as result6_0_,
+        userenroll0_.user_id as user4_6_0_ 
+    from
+        user_enrollment userenroll0_ 
+    where
+        userenroll0_.id=?
+[zaetoon] - 2011-07-01 00:13:14,133 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.ProgramStructure
+[zaetoon] - 2011-07-01 00:13:14,134 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.ProgramStructure
+        */ insert 
+        into
+            program_structure
+            (category, days, description, name, prerequisites) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 00:13:14,138 -  - 
+    /* load com.bizintelapps.zaetoon.domain.ProgramStructure */ select
+        programstr0_.id as id3_0_,
+        programstr0_.category as category3_0_,
+        programstr0_.days as days3_0_,
+        programstr0_.description as descript4_3_0_,
+        programstr0_.name as name3_0_,
+        programstr0_.prerequisites as prerequi6_3_0_ 
+    from
+        program_structure programstr0_ 
+    where
+        programstr0_.id=?
+[zaetoon] - 2011-07-01 00:13:14,211 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserProfile
+[zaetoon] - 2011-07-01 00:13:14,212 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserProfile
+        */ insert 
+        into
+            user_profile
+            (city, country, first_name, last_name, title) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 00:13:14,214 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserProfile */ select
+        userprofil0_.id as id0_0_,
+        userprofil0_.city as city0_0_,
+        userprofil0_.country as country0_0_,
+        userprofil0_.first_name as first4_0_0_,
+        userprofil0_.last_name as last5_0_0_,
+        userprofil0_.title as title0_0_ 
+    from
+        user_profile userprofil0_ 
+    where
+        userprofil0_.id=?
+[zaetoon] - 2011-07-01 00:13:14,227 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 00:13:14,244 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:13:14,364 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 00:13:14,374 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:13:23,542 -  - Unsuccessful: create table REVINFO (REV integer not null auto_increment, REVTSTMP bigint, primary key (REV)) type=InnoDB
+[zaetoon] - 2011-07-01 00:13:23,544 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 5
+[zaetoon] - 2011-07-01 00:13:23,544 -  - Unsuccessful: create table authorities_AUD (username varchar(50) not null, REV integer not null, REVTYPE tinyint, authority varchar(50), primary key (username, REV)) type=InnoDB
+[zaetoon] - 2011-07-01 00:13:23,544 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 7
+[zaetoon] - 2011-07-01 00:13:23,545 -  - Unsuccessful: create table program_AUD (id integer not null, REV integer not null, REVTYPE tinyint, program_structure_id integer, start_date date, status varchar(25), primary key (id, REV)) type=InnoDB
+[zaetoon] - 2011-07-01 00:13:23,545 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 9
+[zaetoon] - 2011-07-01 00:13:23,545 -  - Unsuccessful: create table program_structure_AUD (id integer not null, REV integer not null, REVTYPE tinyint, category varchar(200), days integer, description varchar(200), name varchar(50), prerequisites integer, primary key (id, REV)) type=InnoDB
+[zaetoon] - 2011-07-01 00:13:23,545 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 11
+[zaetoon] - 2011-07-01 00:13:23,546 -  - Unsuccessful: create table user_enrollment_AUD (id integer not null, REV integer not null, REVTYPE tinyint, program_id integer, result varchar(50), user_id integer, primary key (id, REV)) type=InnoDB
+[zaetoon] - 2011-07-01 00:13:23,546 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 9
+[zaetoon] - 2011-07-01 00:13:23,546 -  - Unsuccessful: create table user_graduation_AUD (id integer not null, REV integer not null, REVTYPE tinyint, graduation_date date, program_structure_id integer, title varchar(150), user_id integer, primary key (id, REV)) type=InnoDB
+[zaetoon] - 2011-07-01 00:13:23,546 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 10
+[zaetoon] - 2011-07-01 00:13:23,547 -  - Unsuccessful: create table user_profile_AUD (id integer not null, REV integer not null, REVTYPE tinyint, city varchar(80), country varchar(80), first_name varchar(45), last_name varchar(45), title varchar(150), primary key (id, REV)) type=InnoDB
+[zaetoon] - 2011-07-01 00:13:23,547 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 11
+[zaetoon] - 2011-07-01 00:13:23,547 -  - Unsuccessful: create table users_AUD (username varchar(50) not null, REV integer not null, REVTYPE tinyint, enabled bit, password varchar(50), primary key (username, REV)) type=InnoDB
+[zaetoon] - 2011-07-01 00:13:23,547 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 8
+[zaetoon] - 2011-07-01 00:13:23,547 -  - Unsuccessful: alter table authorities_AUD add index FK194AC872DF74E053 (REV), add constraint FK194AC872DF74E053 foreign key (REV) references REVINFO (REV)
+[zaetoon] - 2011-07-01 00:13:23,548 -  - Table 'zaetoon.authorities_aud' doesn't exist
+[zaetoon] - 2011-07-01 00:13:23,548 -  - Unsuccessful: alter table program_AUD add index FK3C406A55DF74E053 (REV), add constraint FK3C406A55DF74E053 foreign key (REV) references REVINFO (REV)
+[zaetoon] - 2011-07-01 00:13:23,548 -  - Table 'zaetoon.program_aud' doesn't exist
+[zaetoon] - 2011-07-01 00:13:23,548 -  - Unsuccessful: alter table program_structure_AUD add index FK56F2A349DF74E053 (REV), add constraint FK56F2A349DF74E053 foreign key (REV) references REVINFO (REV)
+[zaetoon] - 2011-07-01 00:13:23,548 -  - Table 'zaetoon.program_structure_aud' doesn't exist
+[zaetoon] - 2011-07-01 00:13:23,549 -  - Unsuccessful: alter table user_enrollment_AUD add index FKF7B381C9DF74E053 (REV), add constraint FKF7B381C9DF74E053 foreign key (REV) references REVINFO (REV)
+[zaetoon] - 2011-07-01 00:13:23,549 -  - Table 'zaetoon.user_enrollment_aud' doesn't exist
+[zaetoon] - 2011-07-01 00:13:23,549 -  - Unsuccessful: alter table user_graduation_AUD add index FK70A12D33DF74E053 (REV), add constraint FK70A12D33DF74E053 foreign key (REV) references REVINFO (REV)
+[zaetoon] - 2011-07-01 00:13:23,549 -  - Table 'zaetoon.user_graduation_aud' doesn't exist
+[zaetoon] - 2011-07-01 00:13:23,550 -  - Unsuccessful: alter table user_profile_AUD add index FKAD9CAC86DF74E053 (REV), add constraint FKAD9CAC86DF74E053 foreign key (REV) references REVINFO (REV)
+[zaetoon] - 2011-07-01 00:13:23,550 -  - Table 'zaetoon.user_profile_aud' doesn't exist
+[zaetoon] - 2011-07-01 00:13:23,550 -  - Unsuccessful: alter table users_AUD add index FK154C77D9DF74E053 (REV), add constraint FK154C77D9DF74E053 foreign key (REV) references REVINFO (REV)
+[zaetoon] - 2011-07-01 00:13:23,550 -  - Table 'zaetoon.users_aud' doesn't exist
+[zaetoon] - 2011-07-01 00:13:25,204 -  - Servlet Context initialized...
+[zaetoon] - 2011-07-01 00:17:18,634 -  - Servlet Context destroyed...
+[zaetoon] - 2011-07-01 00:17:35,345 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 00:17:35,395 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:17:42,917 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Users
+        */ insert 
+        into
+            users
+            (enabled, password, username) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 00:17:42,943 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Users */ select
+        users0_.username as username0_0_,
+        users0_.enabled as enabled0_0_,
+        users0_.password as password0_0_ 
+    from
+        users users0_ 
+    where
+        users0_.username=?
+[zaetoon] - 2011-07-01 00:17:43,033 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 00:17:43,045 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:17:43,119 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Users
+        */ insert 
+        into
+            users
+            (enabled, password, username) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 00:17:43,122 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Authorities
+        */ insert 
+        into
+            authorities
+            (authority, username) 
+        values
+            (?, ?)
+[zaetoon] - 2011-07-01 00:17:43,125 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Authorities */ select
+        authoritie0_.username as username6_0_,
+        authoritie0_.authority as authority6_0_ 
+    from
+        authorities authoritie0_ 
+    where
+        authoritie0_.username=?
+[zaetoon] - 2011-07-01 00:17:43,168 -  - 
+    /* Named query Users.selectAll */ select
+        users0_.username as username0_,
+        users0_.enabled as enabled0_,
+        users0_.password as password0_ 
+    from
+        users users0_ 
+    where
+        1=1 limit ?
+[zaetoon] - 2011-07-01 00:17:43,183 -  - 
+    /* Named query Users.selectAll.native */ select
+        {account.*} 
+    from
+        users limit ?
+[zaetoon] - 2011-07-01 00:17:43,193 -  - SQL Error: 1064, SQLState: 42000
+[zaetoon] - 2011-07-01 00:17:43,193 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from users limit 500' at line 1
+[zaetoon] - 2011-07-01 00:17:43,251 -  - get returned null with pk=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah
+[zaetoon] - 2011-07-01 00:17:43,271 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:17:43,327 -  - get returned null with pk=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaal
+[zaetoon] - 2011-07-01 00:17:43,336 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:17:43,346 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 00:17:43,356 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:17:43,531 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserProfile
+[zaetoon] - 2011-07-01 00:17:43,532 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserProfile
+        */ insert 
+        into
+            user_profile
+            (city, country, first_name, last_name, title) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 00:17:43,539 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.ProgramStructure
+[zaetoon] - 2011-07-01 00:17:43,540 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.ProgramStructure
+        */ insert 
+        into
+            program_structure
+            (category, days, description, name, prerequisites) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 00:17:43,548 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserGraduation
+[zaetoon] - 2011-07-01 00:17:43,553 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserGraduation
+        */ insert 
+        into
+            user_graduation
+            (graduation_date, program_structure_id, title, user_id) 
+        values
+            (?, ?, ?, ?)
+[zaetoon] - 2011-07-01 00:17:43,560 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserGraduation */ select
+        usergradua0_.id as id4_0_,
+        usergradua0_.graduation_date as graduation2_4_0_,
+        usergradua0_.program_structure_id as program3_4_0_,
+        usergradua0_.title as title4_0_,
+        usergradua0_.user_id as user5_4_0_ 
+    from
+        user_graduation usergradua0_ 
+    where
+        usergradua0_.id=?
+[zaetoon] - 2011-07-01 00:17:43,634 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.Program
+[zaetoon] - 2011-07-01 00:17:43,637 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Program
+        */ insert 
+        into
+            program
+            (program_structure_id, start_date, status) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 00:17:43,640 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Program */ select
+        program0_.id as id5_0_,
+        program0_.program_structure_id as program2_5_0_,
+        program0_.start_date as start3_5_0_,
+        program0_.status as status5_0_ 
+    from
+        program program0_ 
+    where
+        program0_.id=?
+[zaetoon] - 2011-07-01 00:17:43,693 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserEnrollment
+[zaetoon] - 2011-07-01 00:17:43,696 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserEnrollment
+        */ insert 
+        into
+            user_enrollment
+            (program_id, result, user_id) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 00:17:43,698 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserEnrollment */ select
+        userenroll0_.id as id1_0_,
+        userenroll0_.program_id as program2_1_0_,
+        userenroll0_.result as result1_0_,
+        userenroll0_.user_id as user4_1_0_ 
+    from
+        user_enrollment userenroll0_ 
+    where
+        userenroll0_.id=?
+[zaetoon] - 2011-07-01 00:17:43,725 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.ProgramStructure
+[zaetoon] - 2011-07-01 00:17:43,726 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.ProgramStructure
+        */ insert 
+        into
+            program_structure
+            (category, days, description, name, prerequisites) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 00:17:43,733 -  - 
+    /* load com.bizintelapps.zaetoon.domain.ProgramStructure */ select
+        programstr0_.id as id2_0_,
+        programstr0_.category as category2_0_,
+        programstr0_.days as days2_0_,
+        programstr0_.description as descript4_2_0_,
+        programstr0_.name as name2_0_,
+        programstr0_.prerequisites as prerequi6_2_0_ 
+    from
+        program_structure programstr0_ 
+    where
+        programstr0_.id=?
+[zaetoon] - 2011-07-01 00:17:43,839 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserProfile
+[zaetoon] - 2011-07-01 00:17:43,840 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserProfile
+        */ insert 
+        into
+            user_profile
+            (city, country, first_name, last_name, title) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 00:17:43,842 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserProfile */ select
+        userprofil0_.id as id3_0_,
+        userprofil0_.city as city3_0_,
+        userprofil0_.country as country3_0_,
+        userprofil0_.first_name as first4_3_0_,
+        userprofil0_.last_name as last5_3_0_,
+        userprofil0_.title as title3_0_ 
+    from
+        user_profile userprofil0_ 
+    where
+        userprofil0_.id=?
+[zaetoon] - 2011-07-01 00:17:43,873 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 00:17:43,886 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:17:43,966 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 00:17:43,982 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:18:44,701 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 00:18:44,763 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:18:50,461 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Users
+        */ insert 
+        into
+            users
+            (enabled, password, username) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 00:18:50,489 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Users */ select
+        users0_.username as username6_0_,
+        users0_.enabled as enabled6_0_,
+        users0_.password as password6_0_ 
+    from
+        users users0_ 
+    where
+        users0_.username=?
+[zaetoon] - 2011-07-01 00:18:50,534 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 00:18:50,549 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:18:50,649 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Users
+        */ insert 
+        into
+            users
+            (enabled, password, username) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 00:18:50,655 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Authorities
+        */ insert 
+        into
+            authorities
+            (authority, username) 
+        values
+            (?, ?)
+[zaetoon] - 2011-07-01 00:18:50,658 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Authorities */ select
+        authoritie0_.username as username3_0_,
+        authoritie0_.authority as authority3_0_ 
+    from
+        authorities authoritie0_ 
+    where
+        authoritie0_.username=?
+[zaetoon] - 2011-07-01 00:18:50,702 -  - 
+    /* Named query Users.selectAll */ select
+        users0_.username as username6_,
+        users0_.enabled as enabled6_,
+        users0_.password as password6_ 
+    from
+        users users0_ 
+    where
+        1=1 limit ?
+[zaetoon] - 2011-07-01 00:18:50,715 -  - 
+    /* Named query Users.selectAll.native */ select
+        {account.*} 
+    from
+        users limit ?
+[zaetoon] - 2011-07-01 00:18:50,724 -  - SQL Error: 1064, SQLState: 42000
+[zaetoon] - 2011-07-01 00:18:50,724 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from users limit 500' at line 1
+[zaetoon] - 2011-07-01 00:18:50,765 -  - get returned null with pk=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah
+[zaetoon] - 2011-07-01 00:18:50,778 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:18:50,798 -  - get returned null with pk=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaal
+[zaetoon] - 2011-07-01 00:18:50,807 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:18:50,819 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 00:18:50,828 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:18:50,982 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserProfile
+[zaetoon] - 2011-07-01 00:18:50,983 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserProfile
+        */ insert 
+        into
+            user_profile
+            (city, country, first_name, last_name, title) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 00:18:50,989 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.ProgramStructure
+[zaetoon] - 2011-07-01 00:18:50,990 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.ProgramStructure
+        */ insert 
+        into
+            program_structure
+            (category, days, description, name, prerequisites) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 00:18:50,994 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserGraduation
+[zaetoon] - 2011-07-01 00:18:50,999 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserGraduation
+        */ insert 
+        into
+            user_graduation
+            (graduation_date, program_structure_id, title, user_id) 
+        values
+            (?, ?, ?, ?)
+[zaetoon] - 2011-07-01 00:18:51,006 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserGraduation */ select
+        usergradua0_.id as id1_0_,
+        usergradua0_.graduation_date as graduation2_1_0_,
+        usergradua0_.program_structure_id as program3_1_0_,
+        usergradua0_.title as title1_0_,
+        usergradua0_.user_id as user5_1_0_ 
+    from
+        user_graduation usergradua0_ 
+    where
+        usergradua0_.id=?
+[zaetoon] - 2011-07-01 00:18:51,089 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.Program
+[zaetoon] - 2011-07-01 00:18:51,092 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Program
+        */ insert 
+        into
+            program
+            (program_structure_id, start_date, status) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 00:18:51,095 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Program */ select
+        program0_.id as id2_0_,
+        program0_.program_structure_id as program2_2_0_,
+        program0_.start_date as start3_2_0_,
+        program0_.status as status2_0_ 
+    from
+        program program0_ 
+    where
+        program0_.id=?
+[zaetoon] - 2011-07-01 00:18:51,149 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserEnrollment
+[zaetoon] - 2011-07-01 00:18:51,153 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserEnrollment
+        */ insert 
+        into
+            user_enrollment
+            (program_id, result, user_id) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 00:18:51,155 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserEnrollment */ select
+        userenroll0_.id as id5_0_,
+        userenroll0_.program_id as program2_5_0_,
+        userenroll0_.result as result5_0_,
+        userenroll0_.user_id as user4_5_0_ 
+    from
+        user_enrollment userenroll0_ 
+    where
+        userenroll0_.id=?
+[zaetoon] - 2011-07-01 00:18:51,177 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.ProgramStructure
+[zaetoon] - 2011-07-01 00:18:51,179 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.ProgramStructure
+        */ insert 
+        into
+            program_structure
+            (category, days, description, name, prerequisites) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 00:18:51,182 -  - 
+    /* load com.bizintelapps.zaetoon.domain.ProgramStructure */ select
+        programstr0_.id as id0_0_,
+        programstr0_.category as category0_0_,
+        programstr0_.days as days0_0_,
+        programstr0_.description as descript4_0_0_,
+        programstr0_.name as name0_0_,
+        programstr0_.prerequisites as prerequi6_0_0_ 
+    from
+        program_structure programstr0_ 
+    where
+        programstr0_.id=?
+[zaetoon] - 2011-07-01 00:18:51,283 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserProfile
+[zaetoon] - 2011-07-01 00:18:51,284 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserProfile
+        */ insert 
+        into
+            user_profile
+            (city, country, first_name, last_name, title) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 00:18:51,287 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserProfile */ select
+        userprofil0_.id as id4_0_,
+        userprofil0_.city as city4_0_,
+        userprofil0_.country as country4_0_,
+        userprofil0_.first_name as first4_4_0_,
+        userprofil0_.last_name as last5_4_0_,
+        userprofil0_.title as title4_0_ 
+    from
+        user_profile userprofil0_ 
+    where
+        userprofil0_.id=?
+[zaetoon] - 2011-07-01 00:18:51,301 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 00:18:51,318 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:18:51,388 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 00:18:51,408 -  - findCount returned null!
+[zaetoon] - 2011-07-01 00:19:03,126 -  - Servlet Context initialized...
+[zaetoon] - 2011-07-01 00:19:08,394 -  - Registering converter com.bizintelapps.zaetoon.converter.DateConverter@77396f71
+[zaetoon] - 2011-07-01 00:19:08,420 -  - Registering annotation formatter EnumFormatterAnnotationFactory
+[zaetoon] - 2011-07-01 00:19:08,420 -  - Registering annotation formatter FileSizeFormatterAnnotationFactory
+[zaetoon] - 2011-07-01 00:19:08,421 -  - Registering formatter Authorities
+[zaetoon] - 2011-07-01 00:19:08,421 -  - Registering formatter Program
+[zaetoon] - 2011-07-01 00:19:08,422 -  - Registering formatter ProgramStructure
+[zaetoon] - 2011-07-01 00:19:08,422 -  - Registering formatter UserEnrollment
+[zaetoon] - 2011-07-01 00:19:08,422 -  - Registering formatter UserGraduation
+[zaetoon] - 2011-07-01 00:19:08,422 -  - Registering formatter UserProfile
+[zaetoon] - 2011-07-01 00:19:08,422 -  - Registering formatter Users
+[zaetoon] - 2011-07-01 00:19:08,424 -  - Registering default enum formatter for NullRestrictionKind
+[zaetoon] - 2011-07-01 00:19:08,424 -  - Registering default enum formatter for OrderByDirection
+[zaetoon] - 2011-07-01 00:19:08,425 -  - Registering default enum formatter for SearchMode
+[zaetoon] - 2011-07-01 00:19:10,523 -  - Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+[zaetoon] - 2011-07-01 00:19:10,599 - anonymousUser - sessionId=9ih49ifwu4a maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 00:19:10,600 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 00:19:14,808 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 00:19:20,665 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-01 00:19:20,694 -  - 
+    /* criteria query */ select
+        this_.username as username3_0_,
+        this_.enabled as enabled3_0_,
+        this_.password as password3_0_ 
+    from
+        users this_ 
+    where
+        (
+            lower(this_.username) like ? 
+            and (
+                1=1
+            )
+        ) limit ?
+[zaetoon] - 2011-07-01 00:19:20,716 -  - Account admin could not be found
+[zaetoon] - 2011-07-01 00:19:20,725 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 00:21:22,451 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-01 00:21:22,452 -  - Account admin could not be found
+[zaetoon] - 2011-07-01 00:21:22,460 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 00:22:01,912 -  - sessionId=9ih49ifwu4a
+[zaetoon] - 2011-07-01 00:22:01,912 -  - Servlet Context destroyed...
+[zaetoon] - 2011-07-01 00:22:25,767 -  - Servlet Context initialized...
+[zaetoon] - 2011-07-01 00:22:32,064 -  - Registering converter com.bizintelapps.zaetoon.converter.DateConverter@70f10a53
+[zaetoon] - 2011-07-01 00:22:32,065 -  - Registering annotation formatter EnumFormatterAnnotationFactory
+[zaetoon] - 2011-07-01 00:22:32,065 -  - Registering annotation formatter FileSizeFormatterAnnotationFactory
+[zaetoon] - 2011-07-01 00:22:32,066 -  - Registering formatter Authorities
+[zaetoon] - 2011-07-01 00:22:32,066 -  - Registering formatter Program
+[zaetoon] - 2011-07-01 00:22:32,066 -  - Registering formatter ProgramStructure
+[zaetoon] - 2011-07-01 00:22:32,066 -  - Registering formatter UserEnrollment
+[zaetoon] - 2011-07-01 00:22:32,066 -  - Registering formatter UserGraduation
+[zaetoon] - 2011-07-01 00:22:32,067 -  - Registering formatter UserProfile
+[zaetoon] - 2011-07-01 00:22:32,067 -  - Registering formatter Users
+[zaetoon] - 2011-07-01 00:22:32,071 -  - Registering default enum formatter for NullRestrictionKind
+[zaetoon] - 2011-07-01 00:22:32,072 -  - Registering default enum formatter for OrderByDirection
+[zaetoon] - 2011-07-01 00:22:32,072 -  - Registering default enum formatter for SearchMode
+[zaetoon] - 2011-07-01 00:22:33,876 -  - Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+[zaetoon] - 2011-07-01 00:22:33,974 - anonymousUser - sessionId=1u1dvard5ag67 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 00:22:33,975 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 00:22:39,936 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-01 00:22:39,967 -  - 
+    /* criteria query */ select
+        this_.username as username1_0_,
+        this_.enabled as enabled1_0_,
+        this_.password as password1_0_ 
+    from
+        users this_ 
+    where
+        (
+            lower(this_.username) like ? 
+            and (
+                1=1
+            )
+        ) limit ?
+[zaetoon] - 2011-07-01 00:22:39,997 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-01 00:22:40,004 -  - sessionId=1u1dvard5ag67
+[zaetoon] - 2011-07-01 00:22:40,004 -  - sessionId=m0r9k7y7ssn8 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 00:23:17,323 - admin - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserProfile
+[zaetoon] - 2011-07-01 00:23:17,362 - admin - 
+    /* insert com.bizintelapps.zaetoon.domain.UserProfile
+        */ insert 
+        into
+            user_profile
+            (city, country, first_name, last_name, title) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 00:23:17,388 - admin - 
+    /* insert org.hibernate.envers.DefaultRevisionEntity
+        */ insert 
+        into
+            REVINFO
+            (REVTSTMP) 
+        values
+            (?)
+[zaetoon] - 2011-07-01 00:23:17,394 - admin - 
+    /* insert com.bizintelapps.zaetoon.domain.UserProfile_AUD
+        */ insert 
+        into
+            user_profile_AUD
+            (REVTYPE, city, country, first_name, last_name, title, id, REV) 
+        values
+            (?, ?, ?, ?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 00:23:17,434 - admin - 
+    /* load com.bizintelapps.zaetoon.domain.UserProfile */ select
+        userprofil0_.id as id5_0_,
+        userprofil0_.city as city5_0_,
+        userprofil0_.country as country5_0_,
+        userprofil0_.first_name as first4_5_0_,
+        userprofil0_.last_name as last5_5_0_,
+        userprofil0_.title as title5_0_ 
+    from
+        user_profile userprofil0_ 
+    where
+        userprofil0_.id=?
+[zaetoon] - 2011-07-01 00:24:38,990 -  - sessionId=m0r9k7y7ssn8
+[zaetoon] - 2011-07-01 00:24:38,990 -  - Servlet Context destroyed...
+[zaetoon] - 2011-07-01 17:41:05,499 -  - Servlet Context initialized...
+[zaetoon] - 2011-07-01 17:42:04,112 -  - Registering converter com.bizintelapps.zaetoon.converter.DateConverter@4e2ddb6b
+[zaetoon] - 2011-07-01 17:42:04,113 -  - Registering annotation formatter EnumFormatterAnnotationFactory
+[zaetoon] - 2011-07-01 17:42:04,119 -  - Registering annotation formatter FileSizeFormatterAnnotationFactory
+[zaetoon] - 2011-07-01 17:42:04,119 -  - Registering formatter Authorities
+[zaetoon] - 2011-07-01 17:42:04,119 -  - Registering formatter Program
+[zaetoon] - 2011-07-01 17:42:04,120 -  - Registering formatter ProgramStructure
+[zaetoon] - 2011-07-01 17:42:04,120 -  - Registering formatter UserEnrollment
+[zaetoon] - 2011-07-01 17:42:04,120 -  - Registering formatter UserGraduation
+[zaetoon] - 2011-07-01 17:42:04,120 -  - Registering formatter UserProfile
+[zaetoon] - 2011-07-01 17:42:04,120 -  - Registering formatter Users
+[zaetoon] - 2011-07-01 17:42:04,121 -  - Registering default enum formatter for NullRestrictionKind
+[zaetoon] - 2011-07-01 17:42:04,122 -  - Registering default enum formatter for OrderByDirection
+[zaetoon] - 2011-07-01 17:42:04,122 -  - Registering default enum formatter for SearchMode
+[zaetoon] - 2011-07-01 17:42:07,022 -  - Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+[zaetoon] - 2011-07-01 17:42:07,141 - anonymousUser - sessionId=18xkmqmi64icg maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 17:42:07,142 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 17:42:37,913 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 17:43:53,269 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-01 17:43:53,331 -  - 
+    /* criteria query */ select
+        this_.username as username4_0_,
+        this_.enabled as enabled4_0_,
+        this_.password as password4_0_ 
+    from
+        users this_ 
+    where
+        (
+            lower(this_.username) like ? 
+            and (
+                1=1
+            )
+        ) limit ?
+[zaetoon] - 2011-07-01 17:43:53,360 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-01 17:43:53,368 -  - sessionId=18xkmqmi64icg
+[zaetoon] - 2011-07-01 17:43:53,369 -  - sessionId=mvg5dij3lszi maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:07:30,634 -  - sessionId=mvg5dij3lszi
+[zaetoon] - 2011-07-01 18:07:30,641 - anonymousUser - sessionId=nxg0gqpeqqfi maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:07:30,641 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:07:31,825 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:07:41,540 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-01 18:07:41,541 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-01 18:07:41,542 -  - sessionId=nxg0gqpeqqfi
+[zaetoon] - 2011-07-01 18:07:41,542 -  - sessionId=1r7rer1rj836u maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:07:43,632 -  - sessionId=1r7rer1rj836u
+[zaetoon] - 2011-07-01 18:07:43,638 - anonymousUser - sessionId=1ntfyibpym78b maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:07:43,638 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:07:44,719 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:09:41,516 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:10:28,539 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:10:43,023 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-01 18:10:43,025 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-01 18:10:43,026 -  - sessionId=1ntfyibpym78b
+[zaetoon] - 2011-07-01 18:10:43,026 -  - sessionId=1nz0i9qv9re4l maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:13:59,477 -  - sessionId=1nz0i9qv9re4l
+[zaetoon] - 2011-07-01 18:13:59,478 -  - Servlet Context destroyed...
+[zaetoon] - 2011-07-01 18:14:20,712 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:14:20,799 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:14:25,976 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Users
+        */ insert 
+        into
+            users
+            (enabled, password, username) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 18:14:26,035 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Users */ select
+        users0_.username as username0_0_,
+        users0_.enabled as enabled0_0_,
+        users0_.password as password0_0_ 
+    from
+        users users0_ 
+    where
+        users0_.username=?
+[zaetoon] - 2011-07-01 18:14:26,082 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:14:26,093 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:14:26,161 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Users
+        */ insert 
+        into
+            users
+            (enabled, password, username) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 18:14:26,165 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Authorities
+        */ insert 
+        into
+            authorities
+            (authority, username) 
+        values
+            (?, ?)
+[zaetoon] - 2011-07-01 18:14:26,166 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Authorities */ select
+        authoritie0_.username as username1_0_,
+        authoritie0_.authority as authority1_0_ 
+    from
+        authorities authoritie0_ 
+    where
+        authoritie0_.username=?
+[zaetoon] - 2011-07-01 18:14:26,203 -  - 
+    /* Named query Users.selectAll */ select
+        users0_.username as username0_,
+        users0_.enabled as enabled0_,
+        users0_.password as password0_ 
+    from
+        users users0_ 
+    where
+        1=1 limit ?
+[zaetoon] - 2011-07-01 18:14:26,219 -  - 
+    /* Named query Users.selectAll.native */ select
+        {account.*} 
+    from
+        users limit ?
+[zaetoon] - 2011-07-01 18:14:26,240 -  - SQL Error: 1064, SQLState: 42000
+[zaetoon] - 2011-07-01 18:14:26,240 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from users limit 500' at line 1
+[zaetoon] - 2011-07-01 18:14:26,286 -  - get returned null with pk=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah
+[zaetoon] - 2011-07-01 18:14:26,295 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:14:26,367 -  - get returned null with pk=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaal
+[zaetoon] - 2011-07-01 18:14:26,376 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:14:26,388 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:14:26,397 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:14:26,546 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserProfile
+[zaetoon] - 2011-07-01 18:14:26,557 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserProfile
+        */ insert 
+        into
+            user_profile
+            (city, country, first_name, last_name, title) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:14:26,571 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.ProgramStructure
+[zaetoon] - 2011-07-01 18:14:26,572 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.ProgramStructure
+        */ insert 
+        into
+            program_structure
+            (category, days, description, name, prerequisites) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:14:26,577 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserGraduation
+[zaetoon] - 2011-07-01 18:14:26,582 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserGraduation
+        */ insert 
+        into
+            user_graduation
+            (graduation_date, program_structure_id, title, user_id) 
+        values
+            (?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:14:26,593 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserGraduation */ select
+        usergradua0_.id as id2_0_,
+        usergradua0_.graduation_date as graduation2_2_0_,
+        usergradua0_.program_structure_id as program3_2_0_,
+        usergradua0_.title as title2_0_,
+        usergradua0_.user_id as user5_2_0_ 
+    from
+        user_graduation usergradua0_ 
+    where
+        usergradua0_.id=?
+[zaetoon] - 2011-07-01 18:14:26,662 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.Program
+[zaetoon] - 2011-07-01 18:14:26,665 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Program
+        */ insert 
+        into
+            program
+            (program_structure_id, start_date, status) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 18:14:26,667 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Program */ select
+        program0_.id as id4_0_,
+        program0_.program_structure_id as program2_4_0_,
+        program0_.start_date as start3_4_0_,
+        program0_.status as status4_0_ 
+    from
+        program program0_ 
+    where
+        program0_.id=?
+[zaetoon] - 2011-07-01 18:14:26,715 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserEnrollment
+[zaetoon] - 2011-07-01 18:14:26,718 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserEnrollment
+        */ insert 
+        into
+            user_enrollment
+            (program_id, result, user_id) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 18:14:26,721 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserEnrollment */ select
+        userenroll0_.id as id3_0_,
+        userenroll0_.program_id as program2_3_0_,
+        userenroll0_.result as result3_0_,
+        userenroll0_.user_id as user4_3_0_ 
+    from
+        user_enrollment userenroll0_ 
+    where
+        userenroll0_.id=?
+[zaetoon] - 2011-07-01 18:14:26,755 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.ProgramStructure
+[zaetoon] - 2011-07-01 18:14:26,757 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.ProgramStructure
+        */ insert 
+        into
+            program_structure
+            (category, days, description, name, prerequisites) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:14:26,761 -  - 
+    /* load com.bizintelapps.zaetoon.domain.ProgramStructure */ select
+        programstr0_.id as id5_0_,
+        programstr0_.category as category5_0_,
+        programstr0_.days as days5_0_,
+        programstr0_.description as descript4_5_0_,
+        programstr0_.name as name5_0_,
+        programstr0_.prerequisites as prerequi6_5_0_ 
+    from
+        program_structure programstr0_ 
+    where
+        programstr0_.id=?
+[zaetoon] - 2011-07-01 18:14:26,811 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserProfile
+[zaetoon] - 2011-07-01 18:14:26,812 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserProfile
+        */ insert 
+        into
+            user_profile
+            (city, country, first_name, last_name, title) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:14:26,815 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserProfile */ select
+        userprofil0_.id as id6_0_,
+        userprofil0_.city as city6_0_,
+        userprofil0_.country as country6_0_,
+        userprofil0_.first_name as first4_6_0_,
+        userprofil0_.last_name as last5_6_0_,
+        userprofil0_.title as title6_0_ 
+    from
+        user_profile userprofil0_ 
+    where
+        userprofil0_.id=?
+[zaetoon] - 2011-07-01 18:14:26,828 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:14:26,858 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:14:26,913 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:14:26,954 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:14:39,654 -  - Servlet Context initialized...
+[zaetoon] - 2011-07-01 18:14:46,009 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-01 18:14:46,043 -  - 
+    /* criteria query */ select
+        this_.username as username1_0_,
+        this_.enabled as enabled1_0_,
+        this_.password as password1_0_ 
+    from
+        users this_ 
+    where
+        (
+            lower(this_.username) like ? 
+            and (
+                1=1
+            )
+        ) limit ?
+[zaetoon] - 2011-07-01 18:14:46,075 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-01 18:14:46,089 -  - sessionId=1ecz7a8ef20pz maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:14:47,708 -  - Registering converter com.bizintelapps.zaetoon.converter.DateConverter@55bf756b
+[zaetoon] - 2011-07-01 18:14:47,708 -  - Registering annotation formatter EnumFormatterAnnotationFactory
+[zaetoon] - 2011-07-01 18:14:47,708 -  - Registering annotation formatter FileSizeFormatterAnnotationFactory
+[zaetoon] - 2011-07-01 18:14:47,709 -  - Registering formatter Authorities
+[zaetoon] - 2011-07-01 18:14:47,710 -  - Registering formatter Program
+[zaetoon] - 2011-07-01 18:14:47,710 -  - Registering formatter ProgramStructure
+[zaetoon] - 2011-07-01 18:14:47,710 -  - Registering formatter UserEnrollment
+[zaetoon] - 2011-07-01 18:14:47,711 -  - Registering formatter UserGraduation
+[zaetoon] - 2011-07-01 18:14:47,711 -  - Registering formatter UserProfile
+[zaetoon] - 2011-07-01 18:14:47,711 -  - Registering formatter Users
+[zaetoon] - 2011-07-01 18:14:47,712 -  - Registering default enum formatter for NullRestrictionKind
+[zaetoon] - 2011-07-01 18:14:47,712 -  - Registering default enum formatter for OrderByDirection
+[zaetoon] - 2011-07-01 18:14:47,713 -  - Registering default enum formatter for SearchMode
+[zaetoon] - 2011-07-01 18:14:50,027 -  - Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+[zaetoon] - 2011-07-01 18:14:56,975 -  - sessionId=1ecz7a8ef20pz
+[zaetoon] - 2011-07-01 18:14:56,983 - anonymousUser - sessionId=tsi4c7m1w9oi maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:14:56,983 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:14:58,363 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:15:05,821 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-01 18:15:05,822 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-01 18:15:05,823 -  - sessionId=tsi4c7m1w9oi
+[zaetoon] - 2011-07-01 18:15:05,824 -  - sessionId=1rfaywsuks6m3 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:16:26,573 -  - sessionId=1rfaywsuks6m3
+[zaetoon] - 2011-07-01 18:16:26,574 -  - Servlet Context destroyed...
+[zaetoon] - 2011-07-01 18:16:41,847 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:16:41,936 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:16:47,238 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Users
+        */ insert 
+        into
+            users
+            (enabled, password, username) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 18:16:47,266 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Users */ select
+        users0_.username as username1_0_,
+        users0_.enabled as enabled1_0_,
+        users0_.password as password1_0_ 
+    from
+        users users0_ 
+    where
+        users0_.username=?
+[zaetoon] - 2011-07-01 18:16:47,305 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:16:47,316 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:16:47,394 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Users
+        */ insert 
+        into
+            users
+            (enabled, password, username) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 18:16:47,398 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Authorities
+        */ insert 
+        into
+            authorities
+            (authority, username) 
+        values
+            (?, ?)
+[zaetoon] - 2011-07-01 18:16:47,399 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Authorities */ select
+        authoritie0_.username as username6_0_,
+        authoritie0_.authority as authority6_0_ 
+    from
+        authorities authoritie0_ 
+    where
+        authoritie0_.username=?
+[zaetoon] - 2011-07-01 18:16:47,438 -  - 
+    /* Named query Users.selectAll */ select
+        users0_.username as username1_,
+        users0_.enabled as enabled1_,
+        users0_.password as password1_ 
+    from
+        users users0_ 
+    where
+        1=1 limit ?
+[zaetoon] - 2011-07-01 18:16:47,453 -  - 
+    /* Named query Users.selectAll.native */ select
+        {account.*} 
+    from
+        users limit ?
+[zaetoon] - 2011-07-01 18:16:47,462 -  - SQL Error: 1064, SQLState: 42000
+[zaetoon] - 2011-07-01 18:16:47,462 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from users limit 500' at line 1
+[zaetoon] - 2011-07-01 18:16:47,475 -  - get returned null with pk=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah
+[zaetoon] - 2011-07-01 18:16:47,484 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:16:47,534 -  - get returned null with pk=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaal
+[zaetoon] - 2011-07-01 18:16:47,543 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:16:47,555 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:16:47,565 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:16:47,718 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserProfile
+[zaetoon] - 2011-07-01 18:16:47,723 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserProfile
+        */ insert 
+        into
+            user_profile
+            (city, country, first_name, last_name, title) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:16:47,731 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.ProgramStructure
+[zaetoon] - 2011-07-01 18:16:47,732 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.ProgramStructure
+        */ insert 
+        into
+            program_structure
+            (category, days, description, name, prerequisites) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:16:47,733 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserGraduation
+[zaetoon] - 2011-07-01 18:16:47,738 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserGraduation
+        */ insert 
+        into
+            user_graduation
+            (graduation_date, program_structure_id, title, user_id) 
+        values
+            (?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:16:47,743 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserGraduation */ select
+        usergradua0_.id as id2_0_,
+        usergradua0_.graduation_date as graduation2_2_0_,
+        usergradua0_.program_structure_id as program3_2_0_,
+        usergradua0_.title as title2_0_,
+        usergradua0_.user_id as user5_2_0_ 
+    from
+        user_graduation usergradua0_ 
+    where
+        usergradua0_.id=?
+[zaetoon] - 2011-07-01 18:16:47,805 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.Program
+[zaetoon] - 2011-07-01 18:16:47,809 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Program
+        */ insert 
+        into
+            program
+            (program_structure_id, start_date, status) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 18:16:47,812 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Program */ select
+        program0_.id as id5_0_,
+        program0_.program_structure_id as program2_5_0_,
+        program0_.start_date as start3_5_0_,
+        program0_.status as status5_0_ 
+    from
+        program program0_ 
+    where
+        program0_.id=?
+[zaetoon] - 2011-07-01 18:16:47,864 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserEnrollment
+[zaetoon] - 2011-07-01 18:16:47,867 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserEnrollment
+        */ insert 
+        into
+            user_enrollment
+            (program_id, result, user_id) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 18:16:47,869 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserEnrollment */ select
+        userenroll0_.id as id3_0_,
+        userenroll0_.program_id as program2_3_0_,
+        userenroll0_.result as result3_0_,
+        userenroll0_.user_id as user4_3_0_ 
+    from
+        user_enrollment userenroll0_ 
+    where
+        userenroll0_.id=?
+[zaetoon] - 2011-07-01 18:16:47,891 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.ProgramStructure
+[zaetoon] - 2011-07-01 18:16:47,894 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.ProgramStructure
+        */ insert 
+        into
+            program_structure
+            (category, days, description, name, prerequisites) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:16:47,897 -  - 
+    /* load com.bizintelapps.zaetoon.domain.ProgramStructure */ select
+        programstr0_.id as id4_0_,
+        programstr0_.category as category4_0_,
+        programstr0_.days as days4_0_,
+        programstr0_.description as descript4_4_0_,
+        programstr0_.name as name4_0_,
+        programstr0_.prerequisites as prerequi6_4_0_ 
+    from
+        program_structure programstr0_ 
+    where
+        programstr0_.id=?
+[zaetoon] - 2011-07-01 18:16:47,957 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserProfile
+[zaetoon] - 2011-07-01 18:16:47,958 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserProfile
+        */ insert 
+        into
+            user_profile
+            (city, country, first_name, last_name, title) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:16:47,961 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserProfile */ select
+        userprofil0_.id as id0_0_,
+        userprofil0_.city as city0_0_,
+        userprofil0_.country as country0_0_,
+        userprofil0_.first_name as first4_0_0_,
+        userprofil0_.last_name as last5_0_0_,
+        userprofil0_.title as title0_0_ 
+    from
+        user_profile userprofil0_ 
+    where
+        userprofil0_.id=?
+[zaetoon] - 2011-07-01 18:16:47,971 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:16:48,009 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:16:48,114 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:16:48,138 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:16:58,097 -  - Servlet Context initialized...
+[zaetoon] - 2011-07-01 18:17:09,405 -  - Registering converter com.bizintelapps.zaetoon.converter.DateConverter@12b43967
+[zaetoon] - 2011-07-01 18:17:09,413 -  - Registering annotation formatter EnumFormatterAnnotationFactory
+[zaetoon] - 2011-07-01 18:17:09,413 -  - Registering annotation formatter FileSizeFormatterAnnotationFactory
+[zaetoon] - 2011-07-01 18:17:09,414 -  - Registering formatter Authorities
+[zaetoon] - 2011-07-01 18:17:09,415 -  - Registering formatter Program
+[zaetoon] - 2011-07-01 18:17:09,415 -  - Registering formatter ProgramStructure
+[zaetoon] - 2011-07-01 18:17:09,415 -  - Registering formatter UserEnrollment
+[zaetoon] - 2011-07-01 18:17:09,415 -  - Registering formatter UserGraduation
+[zaetoon] - 2011-07-01 18:17:09,415 -  - Registering formatter UserProfile
+[zaetoon] - 2011-07-01 18:17:09,415 -  - Registering formatter Users
+[zaetoon] - 2011-07-01 18:17:09,417 -  - Registering default enum formatter for NullRestrictionKind
+[zaetoon] - 2011-07-01 18:17:09,428 -  - Registering default enum formatter for OrderByDirection
+[zaetoon] - 2011-07-01 18:17:09,429 -  - Registering default enum formatter for SearchMode
+[zaetoon] - 2011-07-01 18:17:11,587 -  - Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+[zaetoon] - 2011-07-01 18:17:11,907 - anonymousUser - sessionId=788wdn2y2a6k maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:17:11,908 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:17:18,615 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:17:24,188 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-01 18:17:24,217 -  - 
+    /* criteria query */ select
+        this_.username as username6_0_,
+        this_.enabled as enabled6_0_,
+        this_.password as password6_0_ 
+    from
+        users this_ 
+    where
+        (
+            lower(this_.username) like ? 
+            and (
+                1=1
+            )
+        ) limit ?
+[zaetoon] - 2011-07-01 18:17:24,245 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-01 18:17:24,252 -  - sessionId=788wdn2y2a6k
+[zaetoon] - 2011-07-01 18:17:24,252 -  - sessionId=l8udeksy3c35 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:20:02,845 -  - sessionId=l8udeksy3c35
+[zaetoon] - 2011-07-01 18:20:02,852 - anonymousUser - sessionId=x1eq55lldobu maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:20:02,853 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:20:13,220 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:20:54,834 -  - sessionId=x1eq55lldobu
+[zaetoon] - 2011-07-01 18:20:54,834 -  - Servlet Context destroyed...
+[zaetoon] - 2011-07-01 18:21:11,118 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:21:11,183 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:21:16,558 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Users
+        */ insert 
+        into
+            users
+            (enabled, password, username) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 18:21:16,586 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Users */ select
+        users0_.username as username3_0_,
+        users0_.enabled as enabled3_0_,
+        users0_.password as password3_0_ 
+    from
+        users users0_ 
+    where
+        users0_.username=?
+[zaetoon] - 2011-07-01 18:21:16,635 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:21:16,650 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:21:16,707 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Users
+        */ insert 
+        into
+            users
+            (enabled, password, username) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 18:21:16,711 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Authorities
+        */ insert 
+        into
+            authorities
+            (authority, username) 
+        values
+            (?, ?)
+[zaetoon] - 2011-07-01 18:21:16,713 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Authorities */ select
+        authoritie0_.username as username6_0_,
+        authoritie0_.authority as authority6_0_ 
+    from
+        authorities authoritie0_ 
+    where
+        authoritie0_.username=?
+[zaetoon] - 2011-07-01 18:21:16,754 -  - 
+    /* Named query Users.selectAll */ select
+        users0_.username as username3_,
+        users0_.enabled as enabled3_,
+        users0_.password as password3_ 
+    from
+        users users0_ 
+    where
+        1=1 limit ?
+[zaetoon] - 2011-07-01 18:21:16,769 -  - 
+    /* Named query Users.selectAll.native */ select
+        {account.*} 
+    from
+        users limit ?
+[zaetoon] - 2011-07-01 18:21:16,778 -  - SQL Error: 1064, SQLState: 42000
+[zaetoon] - 2011-07-01 18:21:16,778 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from users limit 500' at line 1
+[zaetoon] - 2011-07-01 18:21:16,791 -  - get returned null with pk=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah
+[zaetoon] - 2011-07-01 18:21:16,803 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:21:16,855 -  - get returned null with pk=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaal
+[zaetoon] - 2011-07-01 18:21:16,864 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:21:16,875 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:21:16,884 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:21:17,038 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserProfile
+[zaetoon] - 2011-07-01 18:21:17,039 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserProfile
+        */ insert 
+        into
+            user_profile
+            (city, country, first_name, last_name, title) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:21:17,059 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.ProgramStructure
+[zaetoon] - 2011-07-01 18:21:17,060 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.ProgramStructure
+        */ insert 
+        into
+            program_structure
+            (category, days, description, name, prerequisites) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:21:17,064 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserGraduation
+[zaetoon] - 2011-07-01 18:21:17,069 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserGraduation
+        */ insert 
+        into
+            user_graduation
+            (graduation_date, program_structure_id, title, user_id) 
+        values
+            (?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:21:17,078 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserGraduation */ select
+        usergradua0_.id as id1_0_,
+        usergradua0_.graduation_date as graduation2_1_0_,
+        usergradua0_.program_structure_id as program3_1_0_,
+        usergradua0_.title as title1_0_,
+        usergradua0_.user_id as user5_1_0_ 
+    from
+        user_graduation usergradua0_ 
+    where
+        usergradua0_.id=?
+[zaetoon] - 2011-07-01 18:21:17,145 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.Program
+[zaetoon] - 2011-07-01 18:21:17,152 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Program
+        */ insert 
+        into
+            program
+            (program_structure_id, start_date, status) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 18:21:17,155 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Program */ select
+        program0_.id as id0_0_,
+        program0_.program_structure_id as program2_0_0_,
+        program0_.start_date as start3_0_0_,
+        program0_.status as status0_0_ 
+    from
+        program program0_ 
+    where
+        program0_.id=?
+[zaetoon] - 2011-07-01 18:21:17,204 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserEnrollment
+[zaetoon] - 2011-07-01 18:21:17,209 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserEnrollment
+        */ insert 
+        into
+            user_enrollment
+            (program_id, result, user_id) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 18:21:17,211 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserEnrollment */ select
+        userenroll0_.id as id2_0_,
+        userenroll0_.program_id as program2_2_0_,
+        userenroll0_.result as result2_0_,
+        userenroll0_.user_id as user4_2_0_ 
+    from
+        user_enrollment userenroll0_ 
+    where
+        userenroll0_.id=?
+[zaetoon] - 2011-07-01 18:21:17,235 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.ProgramStructure
+[zaetoon] - 2011-07-01 18:21:17,236 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.ProgramStructure
+        */ insert 
+        into
+            program_structure
+            (category, days, description, name, prerequisites) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:21:17,244 -  - 
+    /* load com.bizintelapps.zaetoon.domain.ProgramStructure */ select
+        programstr0_.id as id5_0_,
+        programstr0_.category as category5_0_,
+        programstr0_.days as days5_0_,
+        programstr0_.description as descript4_5_0_,
+        programstr0_.name as name5_0_,
+        programstr0_.prerequisites as prerequi6_5_0_ 
+    from
+        program_structure programstr0_ 
+    where
+        programstr0_.id=?
+[zaetoon] - 2011-07-01 18:21:17,303 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserProfile
+[zaetoon] - 2011-07-01 18:21:17,304 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserProfile
+        */ insert 
+        into
+            user_profile
+            (city, country, first_name, last_name, title) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:21:17,307 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserProfile */ select
+        userprofil0_.id as id4_0_,
+        userprofil0_.city as city4_0_,
+        userprofil0_.country as country4_0_,
+        userprofil0_.first_name as first4_4_0_,
+        userprofil0_.last_name as last5_4_0_,
+        userprofil0_.title as title4_0_ 
+    from
+        user_profile userprofil0_ 
+    where
+        userprofil0_.id=?
+[zaetoon] - 2011-07-01 18:21:17,320 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:21:17,345 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:21:17,408 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:21:17,434 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:21:27,540 -  - Servlet Context initialized...
+[zaetoon] - 2011-07-01 18:21:36,189 -  - Registering converter com.bizintelapps.zaetoon.converter.DateConverter@7221275b
+[zaetoon] - 2011-07-01 18:21:36,191 -  - Registering annotation formatter EnumFormatterAnnotationFactory
+[zaetoon] - 2011-07-01 18:21:36,191 -  - Registering annotation formatter FileSizeFormatterAnnotationFactory
+[zaetoon] - 2011-07-01 18:21:36,191 -  - Registering formatter Authorities
+[zaetoon] - 2011-07-01 18:21:36,191 -  - Registering formatter Program
+[zaetoon] - 2011-07-01 18:21:36,192 -  - Registering formatter ProgramStructure
+[zaetoon] - 2011-07-01 18:21:36,192 -  - Registering formatter UserEnrollment
+[zaetoon] - 2011-07-01 18:21:36,192 -  - Registering formatter UserGraduation
+[zaetoon] - 2011-07-01 18:21:36,192 -  - Registering formatter UserProfile
+[zaetoon] - 2011-07-01 18:21:36,192 -  - Registering formatter Users
+[zaetoon] - 2011-07-01 18:21:36,193 -  - Registering default enum formatter for NullRestrictionKind
+[zaetoon] - 2011-07-01 18:21:36,194 -  - Registering default enum formatter for OrderByDirection
+[zaetoon] - 2011-07-01 18:21:36,194 -  - Registering default enum formatter for SearchMode
+[zaetoon] - 2011-07-01 18:21:38,375 -  - Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+[zaetoon] - 2011-07-01 18:21:38,588 - anonymousUser - sessionId=1v3t1fapwsqcc maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:21:38,589 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:21:45,122 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:21:52,739 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-01 18:21:52,782 -  - 
+    /* criteria query */ select
+        this_.username as username5_0_,
+        this_.enabled as enabled5_0_,
+        this_.password as password5_0_ 
+    from
+        users this_ 
+    where
+        (
+            lower(this_.username) like ? 
+            and (
+                1=1
+            )
+        ) limit ?
+[zaetoon] - 2011-07-01 18:21:52,810 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-01 18:21:52,818 -  - sessionId=1v3t1fapwsqcc
+[zaetoon] - 2011-07-01 18:21:52,819 -  - sessionId=fnc4tv8a7y21 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:28:05,634 -  - sessionId=fnc4tv8a7y21
+[zaetoon] - 2011-07-01 18:28:05,634 -  - Servlet Context destroyed...
+[zaetoon] - 2011-07-01 18:28:38,575 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:28:38,668 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:28:43,960 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Users
+        */ insert 
+        into
+            users
+            (enabled, password, username) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 18:28:43,988 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Users */ select
+        users0_.username as username1_0_,
+        users0_.enabled as enabled1_0_,
+        users0_.password as password1_0_ 
+    from
+        users users0_ 
+    where
+        users0_.username=?
+[zaetoon] - 2011-07-01 18:28:44,027 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:28:44,045 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:28:44,123 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Users
+        */ insert 
+        into
+            users
+            (enabled, password, username) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 18:28:44,127 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Authorities
+        */ insert 
+        into
+            authorities
+            (authority, username) 
+        values
+            (?, ?)
+[zaetoon] - 2011-07-01 18:28:44,129 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Authorities */ select
+        authoritie0_.username as username3_0_,
+        authoritie0_.authority as authority3_0_ 
+    from
+        authorities authoritie0_ 
+    where
+        authoritie0_.username=?
+[zaetoon] - 2011-07-01 18:28:44,170 -  - 
+    /* Named query Users.selectAll */ select
+        users0_.username as username1_,
+        users0_.enabled as enabled1_,
+        users0_.password as password1_ 
+    from
+        users users0_ 
+    where
+        1=1 limit ?
+[zaetoon] - 2011-07-01 18:28:44,183 -  - 
+    /* Named query Users.selectAll.native */ select
+        {account.*} 
+    from
+        users limit ?
+[zaetoon] - 2011-07-01 18:28:44,193 -  - SQL Error: 1064, SQLState: 42000
+[zaetoon] - 2011-07-01 18:28:44,193 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from users limit 500' at line 1
+[zaetoon] - 2011-07-01 18:28:44,205 -  - get returned null with pk=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah
+[zaetoon] - 2011-07-01 18:28:44,216 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:28:44,267 -  - get returned null with pk=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaal
+[zaetoon] - 2011-07-01 18:28:44,275 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:28:44,286 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:28:44,296 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:28:44,449 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserProfile
+[zaetoon] - 2011-07-01 18:28:44,462 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserProfile
+        */ insert 
+        into
+            user_profile
+            (city, country, first_name, last_name, title) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:28:44,475 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.ProgramStructure
+[zaetoon] - 2011-07-01 18:28:44,476 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.ProgramStructure
+        */ insert 
+        into
+            program_structure
+            (category, days, description, name, prerequisites) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:28:44,480 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserGraduation
+[zaetoon] - 2011-07-01 18:28:44,485 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserGraduation
+        */ insert 
+        into
+            user_graduation
+            (graduation_date, program_structure_id, title, user_id) 
+        values
+            (?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:28:44,492 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserGraduation */ select
+        usergradua0_.id as id4_0_,
+        usergradua0_.graduation_date as graduation2_4_0_,
+        usergradua0_.program_structure_id as program3_4_0_,
+        usergradua0_.title as title4_0_,
+        usergradua0_.user_id as user5_4_0_ 
+    from
+        user_graduation usergradua0_ 
+    where
+        usergradua0_.id=?
+[zaetoon] - 2011-07-01 18:28:44,568 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.Program
+[zaetoon] - 2011-07-01 18:28:44,571 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Program
+        */ insert 
+        into
+            program
+            (program_structure_id, start_date, status) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 18:28:44,573 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Program */ select
+        program0_.id as id5_0_,
+        program0_.program_structure_id as program2_5_0_,
+        program0_.start_date as start3_5_0_,
+        program0_.status as status5_0_ 
+    from
+        program program0_ 
+    where
+        program0_.id=?
+[zaetoon] - 2011-07-01 18:28:44,623 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserEnrollment
+[zaetoon] - 2011-07-01 18:28:44,626 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserEnrollment
+        */ insert 
+        into
+            user_enrollment
+            (program_id, result, user_id) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 18:28:44,631 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserEnrollment */ select
+        userenroll0_.id as id2_0_,
+        userenroll0_.program_id as program2_2_0_,
+        userenroll0_.result as result2_0_,
+        userenroll0_.user_id as user4_2_0_ 
+    from
+        user_enrollment userenroll0_ 
+    where
+        userenroll0_.id=?
+[zaetoon] - 2011-07-01 18:28:44,659 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.ProgramStructure
+[zaetoon] - 2011-07-01 18:28:44,661 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.ProgramStructure
+        */ insert 
+        into
+            program_structure
+            (category, days, description, name, prerequisites) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:28:44,670 -  - 
+    /* load com.bizintelapps.zaetoon.domain.ProgramStructure */ select
+        programstr0_.id as id6_0_,
+        programstr0_.category as category6_0_,
+        programstr0_.days as days6_0_,
+        programstr0_.description as descript4_6_0_,
+        programstr0_.name as name6_0_,
+        programstr0_.prerequisites as prerequi6_6_0_ 
+    from
+        program_structure programstr0_ 
+    where
+        programstr0_.id=?
+[zaetoon] - 2011-07-01 18:28:44,729 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserProfile
+[zaetoon] - 2011-07-01 18:28:44,731 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserProfile
+        */ insert 
+        into
+            user_profile
+            (city, country, first_name, last_name, title) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:28:44,734 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserProfile */ select
+        userprofil0_.id as id0_0_,
+        userprofil0_.city as city0_0_,
+        userprofil0_.country as country0_0_,
+        userprofil0_.first_name as first4_0_0_,
+        userprofil0_.last_name as last5_0_0_,
+        userprofil0_.title as title0_0_ 
+    from
+        user_profile userprofil0_ 
+    where
+        userprofil0_.id=?
+[zaetoon] - 2011-07-01 18:28:44,751 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:28:44,780 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:28:44,856 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:28:44,880 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:28:55,429 -  - Servlet Context initialized...
+[zaetoon] - 2011-07-01 18:29:00,491 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-01 18:29:00,526 -  - 
+    /* criteria query */ select
+        this_.username as username2_0_,
+        this_.enabled as enabled2_0_,
+        this_.password as password2_0_ 
+    from
+        users this_ 
+    where
+        (
+            lower(this_.username) like ? 
+            and (
+                1=1
+            )
+        ) limit ?
+[zaetoon] - 2011-07-01 18:29:00,559 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-01 18:29:00,573 -  - sessionId=qjl7yjwjxgwy maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:29:02,178 -  - Registering converter com.bizintelapps.zaetoon.converter.DateConverter@5e899a54
+[zaetoon] - 2011-07-01 18:29:02,178 -  - Registering annotation formatter EnumFormatterAnnotationFactory
+[zaetoon] - 2011-07-01 18:29:02,179 -  - Registering annotation formatter FileSizeFormatterAnnotationFactory
+[zaetoon] - 2011-07-01 18:29:02,185 -  - Registering formatter Authorities
+[zaetoon] - 2011-07-01 18:29:02,186 -  - Registering formatter Program
+[zaetoon] - 2011-07-01 18:29:02,186 -  - Registering formatter ProgramStructure
+[zaetoon] - 2011-07-01 18:29:02,187 -  - Registering formatter UserEnrollment
+[zaetoon] - 2011-07-01 18:29:02,187 -  - Registering formatter UserGraduation
+[zaetoon] - 2011-07-01 18:29:02,187 -  - Registering formatter UserProfile
+[zaetoon] - 2011-07-01 18:29:02,187 -  - Registering formatter Users
+[zaetoon] - 2011-07-01 18:29:02,188 -  - Registering default enum formatter for NullRestrictionKind
+[zaetoon] - 2011-07-01 18:29:02,191 -  - Registering default enum formatter for OrderByDirection
+[zaetoon] - 2011-07-01 18:29:02,193 -  - Registering default enum formatter for SearchMode
+[zaetoon] - 2011-07-01 18:29:04,370 -  - Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+[zaetoon] - 2011-07-01 18:29:11,022 -  - sessionId=qjl7yjwjxgwy
+[zaetoon] - 2011-07-01 18:29:11,029 - anonymousUser - sessionId=guxps4s6on6o maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:29:11,030 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:29:12,326 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:29:19,370 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-01 18:29:19,371 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-01 18:29:19,372 -  - sessionId=guxps4s6on6o
+[zaetoon] - 2011-07-01 18:29:19,372 -  - sessionId=185rfmoml774j maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:29:46,094 -  - sessionId=185rfmoml774j
+[zaetoon] - 2011-07-01 18:29:46,095 -  - Servlet Context destroyed...
+[zaetoon] - 2011-07-01 18:30:08,358 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:30:08,458 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:30:13,850 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Users
+        */ insert 
+        into
+            users
+            (enabled, password, username) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 18:30:13,878 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Users */ select
+        users0_.username as username4_0_,
+        users0_.enabled as enabled4_0_,
+        users0_.password as password4_0_ 
+    from
+        users users0_ 
+    where
+        users0_.username=?
+[zaetoon] - 2011-07-01 18:30:13,927 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:30:13,937 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:30:14,014 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Users
+        */ insert 
+        into
+            users
+            (enabled, password, username) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 18:30:14,018 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Authorities
+        */ insert 
+        into
+            authorities
+            (authority, username) 
+        values
+            (?, ?)
+[zaetoon] - 2011-07-01 18:30:14,020 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Authorities */ select
+        authoritie0_.username as username2_0_,
+        authoritie0_.authority as authority2_0_ 
+    from
+        authorities authoritie0_ 
+    where
+        authoritie0_.username=?
+[zaetoon] - 2011-07-01 18:30:14,056 -  - 
+    /* Named query Users.selectAll */ select
+        users0_.username as username4_,
+        users0_.enabled as enabled4_,
+        users0_.password as password4_ 
+    from
+        users users0_ 
+    where
+        1=1 limit ?
+[zaetoon] - 2011-07-01 18:30:14,071 -  - 
+    /* Named query Users.selectAll.native */ select
+        {account.*} 
+    from
+        users limit ?
+[zaetoon] - 2011-07-01 18:30:14,081 -  - SQL Error: 1064, SQLState: 42000
+[zaetoon] - 2011-07-01 18:30:14,081 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from users limit 500' at line 1
+[zaetoon] - 2011-07-01 18:30:14,094 -  - get returned null with pk=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah
+[zaetoon] - 2011-07-01 18:30:14,102 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:30:14,154 -  - get returned null with pk=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaal
+[zaetoon] - 2011-07-01 18:30:14,164 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:30:14,180 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:30:14,190 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:30:14,348 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserProfile
+[zaetoon] - 2011-07-01 18:30:14,352 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserProfile
+        */ insert 
+        into
+            user_profile
+            (city, country, first_name, last_name, title) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:30:14,361 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.ProgramStructure
+[zaetoon] - 2011-07-01 18:30:14,362 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.ProgramStructure
+        */ insert 
+        into
+            program_structure
+            (category, days, description, name, prerequisites) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:30:14,366 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserGraduation
+[zaetoon] - 2011-07-01 18:30:14,371 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserGraduation
+        */ insert 
+        into
+            user_graduation
+            (graduation_date, program_structure_id, title, user_id) 
+        values
+            (?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:30:14,378 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserGraduation */ select
+        usergradua0_.id as id6_0_,
+        usergradua0_.graduation_date as graduation2_6_0_,
+        usergradua0_.program_structure_id as program3_6_0_,
+        usergradua0_.title as title6_0_,
+        usergradua0_.user_id as user5_6_0_ 
+    from
+        user_graduation usergradua0_ 
+    where
+        usergradua0_.id=?
+[zaetoon] - 2011-07-01 18:30:14,443 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.Program
+[zaetoon] - 2011-07-01 18:30:14,445 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Program
+        */ insert 
+        into
+            program
+            (program_structure_id, start_date, status) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 18:30:14,449 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Program */ select
+        program0_.id as id3_0_,
+        program0_.program_structure_id as program2_3_0_,
+        program0_.start_date as start3_3_0_,
+        program0_.status as status3_0_ 
+    from
+        program program0_ 
+    where
+        program0_.id=?
+[zaetoon] - 2011-07-01 18:30:14,497 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserEnrollment
+[zaetoon] - 2011-07-01 18:30:14,499 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserEnrollment
+        */ insert 
+        into
+            user_enrollment
+            (program_id, result, user_id) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-01 18:30:14,501 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserEnrollment */ select
+        userenroll0_.id as id5_0_,
+        userenroll0_.program_id as program2_5_0_,
+        userenroll0_.result as result5_0_,
+        userenroll0_.user_id as user4_5_0_ 
+    from
+        user_enrollment userenroll0_ 
+    where
+        userenroll0_.id=?
+[zaetoon] - 2011-07-01 18:30:14,524 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.ProgramStructure
+[zaetoon] - 2011-07-01 18:30:14,526 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.ProgramStructure
+        */ insert 
+        into
+            program_structure
+            (category, days, description, name, prerequisites) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:30:14,529 -  - 
+    /* load com.bizintelapps.zaetoon.domain.ProgramStructure */ select
+        programstr0_.id as id0_0_,
+        programstr0_.category as category0_0_,
+        programstr0_.days as days0_0_,
+        programstr0_.description as descript4_0_0_,
+        programstr0_.name as name0_0_,
+        programstr0_.prerequisites as prerequi6_0_0_ 
+    from
+        program_structure programstr0_ 
+    where
+        programstr0_.id=?
+[zaetoon] - 2011-07-01 18:30:14,590 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserProfile
+[zaetoon] - 2011-07-01 18:30:14,592 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserProfile
+        */ insert 
+        into
+            user_profile
+            (city, country, first_name, last_name, title) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-01 18:30:14,594 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserProfile */ select
+        userprofil0_.id as id1_0_,
+        userprofil0_.city as city1_0_,
+        userprofil0_.country as country1_0_,
+        userprofil0_.first_name as first4_1_0_,
+        userprofil0_.last_name as last5_1_0_,
+        userprofil0_.title as title1_0_ 
+    from
+        user_profile userprofil0_ 
+    where
+        userprofil0_.id=?
+[zaetoon] - 2011-07-01 18:30:14,609 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:30:14,637 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:30:14,733 -  - get returned null with pk=101
+[zaetoon] - 2011-07-01 18:30:14,747 -  - findCount returned null!
+[zaetoon] - 2011-07-01 18:30:25,178 -  - Servlet Context initialized...
+[zaetoon] - 2011-07-01 18:30:57,758 -  - Registering converter com.bizintelapps.zaetoon.converter.DateConverter@22ff0470
+[zaetoon] - 2011-07-01 18:30:57,762 -  - Registering annotation formatter EnumFormatterAnnotationFactory
+[zaetoon] - 2011-07-01 18:30:57,762 -  - Registering annotation formatter FileSizeFormatterAnnotationFactory
+[zaetoon] - 2011-07-01 18:30:57,762 -  - Registering formatter Authorities
+[zaetoon] - 2011-07-01 18:30:57,763 -  - Registering formatter Program
+[zaetoon] - 2011-07-01 18:30:57,763 -  - Registering formatter ProgramStructure
+[zaetoon] - 2011-07-01 18:30:57,763 -  - Registering formatter UserEnrollment
+[zaetoon] - 2011-07-01 18:30:57,763 -  - Registering formatter UserGraduation
+[zaetoon] - 2011-07-01 18:30:57,764 -  - Registering formatter UserProfile
+[zaetoon] - 2011-07-01 18:30:57,764 -  - Registering formatter Users
+[zaetoon] - 2011-07-01 18:30:57,765 -  - Registering default enum formatter for NullRestrictionKind
+[zaetoon] - 2011-07-01 18:30:57,766 -  - Registering default enum formatter for OrderByDirection
+[zaetoon] - 2011-07-01 18:30:57,766 -  - Registering default enum formatter for SearchMode
+[zaetoon] - 2011-07-01 18:30:59,672 -  - Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+[zaetoon] - 2011-07-01 18:30:59,857 - anonymousUser - sessionId=1n78wbsdf7eum maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:30:59,861 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:31:05,695 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:31:11,153 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-01 18:31:11,182 -  - 
+    /* criteria query */ select
+        this_.username as username3_0_,
+        this_.enabled as enabled3_0_,
+        this_.password as password3_0_ 
+    from
+        users this_ 
+    where
+        (
+            lower(this_.username) like ? 
+            and (
+                1=1
+            )
+        ) limit ?
+[zaetoon] - 2011-07-01 18:31:11,211 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-01 18:31:11,219 -  - sessionId=1n78wbsdf7eum
+[zaetoon] - 2011-07-01 18:31:11,219 -  - sessionId=1ae4rggxdd1ou maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:44:17,128 - anonymousUser - sessionId=w6gegmbovvnc maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:44:17,128 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:44:22,411 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:44:35,330 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-01 18:44:35,331 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-01 18:44:35,333 -  - sessionId=w6gegmbovvnc
+[zaetoon] - 2011-07-01 18:44:35,333 -  - sessionId=k8ikhvcozdq8 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:44:40,362 -  - sessionId=k8ikhvcozdq8
+[zaetoon] - 2011-07-01 18:44:40,390 - anonymousUser - sessionId=qw6xroxsz2gi maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:44:40,391 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:44:42,788 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:44:55,090 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-01 18:44:55,091 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-01 18:44:55,092 -  - sessionId=qw6xroxsz2gi
+[zaetoon] - 2011-07-01 18:44:55,092 -  - sessionId=nnzav44exayq maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:50:42,926 -  - sessionId=nnzav44exayq
+[zaetoon] - 2011-07-01 18:50:42,958 - anonymousUser - sessionId=1pa27l9jvkndx maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:50:42,958 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:50:45,893 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:50:57,580 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-01 18:50:57,581 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-01 18:50:57,583 -  - sessionId=1pa27l9jvkndx
+[zaetoon] - 2011-07-01 18:50:57,584 -  - sessionId=nvz1msmpvc48 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:54:52,943 - anonymousUser - sessionId=6s9r2iu6xesh maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:54:52,943 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:55:30,747 - anonymousUser - sessionId=ynh41t3awuiy maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:55:30,747 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:55:45,532 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:55:57,907 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-01 18:55:57,908 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-01 18:55:57,909 -  - sessionId=ynh41t3awuiy
+[zaetoon] - 2011-07-01 18:55:57,910 -  - sessionId=1l510unrboy56 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:56:05,173 -  - sessionId=1l510unrboy56
+[zaetoon] - 2011-07-01 18:56:05,204 - anonymousUser - sessionId=19mj8aauwx1dk maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 18:56:05,204 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 18:56:07,939 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 19:02:40,993 - anonymousUser - sessionId=1e4oje6vou56d maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 19:02:40,993 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 19:08:50,539 -  - sessionId=1ae4rggxdd1ou
+[zaetoon] - 2011-07-01 19:15:11,548 - anonymousUser - sessionId=9aacskm8uv2x maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 19:15:11,548 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 19:21:20,543 -  - sessionId=nvz1msmpvc48
+[zaetoon] - 2011-07-01 19:25:20,543 -  - sessionId=6s9r2iu6xesh
+[zaetoon] - 2011-07-01 19:26:20,544 -  - sessionId=19mj8aauwx1dk
+[zaetoon] - 2011-07-01 19:31:53,899 - anonymousUser - sessionId=1i0dldc0xcwcl maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 19:31:53,899 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 19:32:19,225 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 19:32:50,545 -  - sessionId=1e4oje6vou56d
+[zaetoon] - 2011-07-01 19:33:59,239 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 19:35:00,081 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 19:35:10,515 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 19:35:16,796 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-01 19:35:16,798 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-01 19:35:16,805 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 19:35:25,994 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-01 19:35:25,994 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-01 19:35:25,995 -  - sessionId=1i0dldc0xcwcl
+[zaetoon] - 2011-07-01 19:35:25,995 -  - sessionId=xaq87ga0luj8 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 19:35:32,358 -  - sessionId=xaq87ga0luj8
+[zaetoon] - 2011-07-01 19:35:32,364 - anonymousUser - sessionId=13gnb13gek547 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 19:35:32,364 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 19:35:33,372 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 19:35:39,435 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-01 19:35:39,437 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-01 19:35:39,439 -  - sessionId=13gnb13gek547
+[zaetoon] - 2011-07-01 19:35:39,439 -  - sessionId=1myj1cqqtolbq maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 19:36:59,505 -  - sessionId=1myj1cqqtolbq
+[zaetoon] - 2011-07-01 19:36:59,511 - anonymousUser - sessionId=afvbyfa7fnsz maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 19:36:59,511 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 19:37:01,570 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 19:37:06,708 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-01 19:37:06,709 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-01 19:37:06,710 -  - sessionId=afvbyfa7fnsz
+[zaetoon] - 2011-07-01 19:37:06,711 -  - sessionId=47lx15mbn6d6 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 19:37:09,658 -  - sessionId=47lx15mbn6d6
+[zaetoon] - 2011-07-01 19:37:09,663 - anonymousUser - sessionId=1o20f967uw784 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 19:37:09,663 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 19:37:11,436 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 19:37:15,675 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-01 19:37:15,676 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-01 19:37:15,678 -  - sessionId=1o20f967uw784
+[zaetoon] - 2011-07-01 19:37:15,678 -  - sessionId=1c8k8zti32qza maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 19:45:20,696 -  - sessionId=9aacskm8uv2x
+[zaetoon] - 2011-07-01 20:07:20,499 -  - sessionId=1c8k8zti32qza
+[zaetoon] - 2011-07-01 20:11:40,474 -  - Servlet Context destroyed...
+[zaetoon] - 2011-07-01 22:48:57,174 -  - Servlet Context initialized...
+[zaetoon] - 2011-07-01 22:49:13,791 -  - Registering converter com.bizintelapps.zaetoon.converter.DateConverter@2c21a44e
+[zaetoon] - 2011-07-01 22:49:13,815 -  - Registering annotation formatter EnumFormatterAnnotationFactory
+[zaetoon] - 2011-07-01 22:49:13,816 -  - Registering annotation formatter FileSizeFormatterAnnotationFactory
+[zaetoon] - 2011-07-01 22:49:13,816 -  - Registering formatter Authorities
+[zaetoon] - 2011-07-01 22:49:13,817 -  - Registering formatter Program
+[zaetoon] - 2011-07-01 22:49:13,820 -  - Registering formatter ProgramStructure
+[zaetoon] - 2011-07-01 22:49:13,820 -  - Registering formatter UserEnrollment
+[zaetoon] - 2011-07-01 22:49:13,820 -  - Registering formatter UserGraduation
+[zaetoon] - 2011-07-01 22:49:13,820 -  - Registering formatter UserProfile
+[zaetoon] - 2011-07-01 22:49:13,820 -  - Registering formatter Users
+[zaetoon] - 2011-07-01 22:49:13,822 -  - Registering default enum formatter for NullRestrictionKind
+[zaetoon] - 2011-07-01 22:49:13,825 -  - Registering default enum formatter for OrderByDirection
+[zaetoon] - 2011-07-01 22:49:13,825 -  - Registering default enum formatter for SearchMode
+[zaetoon] - 2011-07-01 22:49:15,734 -  - Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+[zaetoon] - 2011-07-01 22:49:15,925 - anonymousUser - sessionId=mpws2spzijuq maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 22:49:15,928 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 22:49:28,052 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 22:49:45,786 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 22:52:53,372 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 22:55:25,247 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 22:57:53,688 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 22:58:58,622 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 22:59:48,505 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 23:00:32,911 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 23:00:49,991 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 23:01:44,600 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 23:02:39,374 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 23:03:23,274 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 23:03:55,240 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 23:04:23,565 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 23:04:48,447 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 23:07:02,524 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 23:09:28,574 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 23:10:52,333 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 23:11:03,128 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 23:11:17,082 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 23:12:54,695 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 23:12:56,829 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 23:15:29,530 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 23:16:40,942 - anonymousUser - No user details
+[zaetoon] - 2011-07-01 23:16:54,461 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-01 23:16:54,496 -  - 
+    /* criteria query */ select
+        this_.username as username4_0_,
+        this_.enabled as enabled4_0_,
+        this_.password as password4_0_ 
+    from
+        users this_ 
+    where
+        (
+            lower(this_.username) like ? 
+            and (
+                1=1
+            )
+        ) limit ?
+[zaetoon] - 2011-07-01 23:16:54,535 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-01 23:16:54,542 -  - sessionId=mpws2spzijuq
+[zaetoon] - 2011-07-01 23:16:54,543 -  - sessionId=59r8ly6rn1wq maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-01 23:47:22,437 -  - sessionId=59r8ly6rn1wq
+[zaetoon] - 2011-07-02 00:47:27,347 -  - Servlet Context destroyed...
+[zaetoon] - 2011-07-02 11:43:22,157 -  - Servlet Context initialized...
+[zaetoon] - 2011-07-02 11:43:37,887 -  - Registering converter com.bizintelapps.zaetoon.converter.DateConverter@1668cdca
+[zaetoon] - 2011-07-02 11:43:37,888 -  - Registering annotation formatter EnumFormatterAnnotationFactory
+[zaetoon] - 2011-07-02 11:43:37,888 -  - Registering annotation formatter FileSizeFormatterAnnotationFactory
+[zaetoon] - 2011-07-02 11:43:37,889 -  - Registering formatter Authorities
+[zaetoon] - 2011-07-02 11:43:37,889 -  - Registering formatter Program
+[zaetoon] - 2011-07-02 11:43:37,889 -  - Registering formatter ProgramStructure
+[zaetoon] - 2011-07-02 11:43:37,889 -  - Registering formatter UserEnrollment
+[zaetoon] - 2011-07-02 11:43:37,890 -  - Registering formatter UserGraduation
+[zaetoon] - 2011-07-02 11:43:37,890 -  - Registering formatter UserProfile
+[zaetoon] - 2011-07-02 11:43:37,890 -  - Registering formatter Users
+[zaetoon] - 2011-07-02 11:43:37,891 -  - Registering default enum formatter for NullRestrictionKind
+[zaetoon] - 2011-07-02 11:43:37,892 -  - Registering default enum formatter for OrderByDirection
+[zaetoon] - 2011-07-02 11:43:37,892 -  - Registering default enum formatter for SearchMode
+[zaetoon] - 2011-07-02 11:43:40,457 -  - Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+[zaetoon] - 2011-07-02 11:43:40,617 - anonymousUser - sessionId=154mq676xalk7 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 11:43:40,621 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 11:43:48,794 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 11:45:42,514 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 11:45:42,581 -  - 
+    /* criteria query */ select
+        this_.username as username1_0_,
+        this_.enabled as enabled1_0_,
+        this_.password as password1_0_ 
+    from
+        users this_ 
+    where
+        (
+            lower(this_.username) like ? 
+            and (
+                1=1
+            )
+        ) limit ?
+[zaetoon] - 2011-07-02 11:45:42,610 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 11:45:42,620 -  - sessionId=154mq676xalk7
+[zaetoon] - 2011-07-02 11:45:42,621 -  - sessionId=1ozlv69acoihr maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 11:49:31,446 - anonymousUser - sessionId=of3ag4j4t1nd maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 11:49:31,447 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 11:49:34,808 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 11:49:36,038 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:02:07,169 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 12:02:07,170 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 12:02:07,171 -  - sessionId=1ozlv69acoihr
+[zaetoon] - 2011-07-02 12:02:07,172 -  - sessionId=156zjswgyoaji maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:02:12,022 -  - sessionId=156zjswgyoaji
+[zaetoon] - 2011-07-02 12:02:12,027 - anonymousUser - sessionId=w98v2anxp4d maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:02:12,028 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:02:13,300 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:02:20,644 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 12:02:20,645 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 12:02:20,646 -  - sessionId=w98v2anxp4d
+[zaetoon] - 2011-07-02 12:02:20,646 -  - sessionId=13iqcskunhf9k maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:02:23,488 -  - sessionId=13iqcskunhf9k
+[zaetoon] - 2011-07-02 12:02:23,494 - anonymousUser - sessionId=13djgk5jj9mtt maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:02:23,495 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:02:25,291 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:03:33,083 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:04:57,000 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:06:58,845 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:07:20,949 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:11:05,549 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:11:38,329 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 12:11:38,330 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 12:11:38,331 -  - sessionId=13djgk5jj9mtt
+[zaetoon] - 2011-07-02 12:11:38,331 -  - sessionId=17ms7x0trfmps maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:11:40,934 -  - sessionId=17ms7x0trfmps
+[zaetoon] - 2011-07-02 12:11:40,939 - anonymousUser - sessionId=hrturk7yzwvi maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:11:40,939 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:11:43,053 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:12:30,935 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:12:39,628 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 12:12:39,629 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 12:12:39,630 -  - sessionId=hrturk7yzwvi
+[zaetoon] - 2011-07-02 12:12:39,630 -  - sessionId=1ayd7it7xyxca maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:12:42,092 -  - sessionId=1ayd7it7xyxca
+[zaetoon] - 2011-07-02 12:12:42,099 - anonymousUser - sessionId=1l0krknrfr042 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:12:42,099 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:12:42,796 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:12:46,489 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 12:12:46,490 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 12:12:46,491 -  - sessionId=1l0krknrfr042
+[zaetoon] - 2011-07-02 12:12:46,491 -  - sessionId=imckpd3d6o55 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:12:50,075 -  - sessionId=imckpd3d6o55
+[zaetoon] - 2011-07-02 12:12:50,080 - anonymousUser - sessionId=1xol6xuxtehsb maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:12:50,081 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:12:50,806 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:15:45,148 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:15:47,441 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:15:57,014 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 12:15:57,014 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 12:15:57,015 -  - sessionId=1xol6xuxtehsb
+[zaetoon] - 2011-07-02 12:15:57,016 -  - sessionId=1e4pn7vu55yhd maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:16:02,029 -  - sessionId=1e4pn7vu55yhd
+[zaetoon] - 2011-07-02 12:16:02,036 - anonymousUser - sessionId=6v7vp6vnj0p8 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:16:02,036 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:16:03,159 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:16:08,790 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 12:16:08,791 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 12:16:08,792 -  - sessionId=6v7vp6vnj0p8
+[zaetoon] - 2011-07-02 12:16:08,792 -  - sessionId=1g7o9j3hj021 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:18:14,585 -  - sessionId=1g7o9j3hj021
+[zaetoon] - 2011-07-02 12:18:14,590 - anonymousUser - sessionId=47jh7a397h4s maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:18:14,591 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:18:15,781 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:18:20,540 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 12:18:20,541 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 12:18:20,542 -  - sessionId=47jh7a397h4s
+[zaetoon] - 2011-07-02 12:18:20,542 -  - sessionId=8s0j7qxhq7e5 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:18:22,805 -  - sessionId=8s0j7qxhq7e5
+[zaetoon] - 2011-07-02 12:18:22,808 - anonymousUser - sessionId=1tqntuvpybkhp maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:18:22,808 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:18:25,408 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:19:44,412 -  - sessionId=of3ag4j4t1nd
+[zaetoon] - 2011-07-02 12:20:18,724 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 12:20:18,725 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 12:20:18,726 -  - sessionId=1tqntuvpybkhp
+[zaetoon] - 2011-07-02 12:20:18,726 -  - sessionId=eaaso5snigw maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:20:20,526 -  - sessionId=eaaso5snigw
+[zaetoon] - 2011-07-02 12:20:20,530 - anonymousUser - sessionId=1d3yhjvuefmpd maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:20:20,531 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:20:21,035 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:20:26,590 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 12:20:26,591 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 12:20:26,592 -  - sessionId=1d3yhjvuefmpd
+[zaetoon] - 2011-07-02 12:20:26,592 -  - sessionId=1ctbmkqozi5k9 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:23:59,444 -  - sessionId=1ctbmkqozi5k9
+[zaetoon] - 2011-07-02 12:23:59,450 - anonymousUser - sessionId=17lmiujh3y4m7 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:23:59,450 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:24:01,371 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:24:06,330 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 12:24:06,331 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 12:24:06,332 -  - sessionId=17lmiujh3y4m7
+[zaetoon] - 2011-07-02 12:24:06,332 -  - sessionId=191rvsn9lbizq maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:24:11,621 -  - sessionId=191rvsn9lbizq
+[zaetoon] - 2011-07-02 12:24:11,625 - anonymousUser - sessionId=yjr6mpnhs21d maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:24:11,625 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:24:12,570 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:31:09,927 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 12:31:09,928 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 12:31:09,929 -  - sessionId=yjr6mpnhs21d
+[zaetoon] - 2011-07-02 12:31:09,929 -  - sessionId=rvakp46f96u9 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:31:29,244 -  - sessionId=rvakp46f96u9
+[zaetoon] - 2011-07-02 12:31:29,250 - anonymousUser - sessionId=einm0qdvs4da maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:31:29,250 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:31:29,717 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:31:32,208 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:31:40,819 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 12:31:40,820 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 12:31:40,821 -  - sessionId=einm0qdvs4da
+[zaetoon] - 2011-07-02 12:31:40,821 -  - sessionId=6tqmmenxgaez maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:33:18,444 -  - sessionId=6tqmmenxgaez
+[zaetoon] - 2011-07-02 12:33:18,449 - anonymousUser - sessionId=yzuklx0hmprk maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:33:18,449 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:33:20,506 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:35:15,621 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 12:35:15,622 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 12:35:15,623 -  - sessionId=yzuklx0hmprk
+[zaetoon] - 2011-07-02 12:35:15,623 -  - sessionId=1kldy0h78rcvw maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:42:06,424 -  - sessionId=1kldy0h78rcvw
+[zaetoon] - 2011-07-02 12:42:06,430 - anonymousUser - sessionId=18q6yust365ko maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:42:06,430 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:42:07,845 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:42:12,263 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 12:42:12,264 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 12:42:12,266 -  - sessionId=18q6yust365ko
+[zaetoon] - 2011-07-02 12:42:12,266 -  - sessionId=70dj7bi9jxvw maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:42:14,872 -  - sessionId=70dj7bi9jxvw
+[zaetoon] - 2011-07-02 12:42:14,876 - anonymousUser - sessionId=1alzh3jnil9bb maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:42:14,876 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:42:15,663 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:42:52,486 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 12:42:52,487 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 12:42:52,489 -  - sessionId=1alzh3jnil9bb
+[zaetoon] - 2011-07-02 12:42:52,489 -  - sessionId=17bvw8e26hz11 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:50:47,570 - anonymousUser - sessionId=jz1ztfyccemy maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:50:47,570 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:50:51,253 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:51:01,089 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 12:51:01,090 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 12:51:01,091 -  - sessionId=jz1ztfyccemy
+[zaetoon] - 2011-07-02 12:51:01,091 -  - sessionId=17itiv879m5e2 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:51:19,419 -  - sessionId=17itiv879m5e2
+[zaetoon] - 2011-07-02 12:51:19,444 - anonymousUser - sessionId=3jwke1o3ul70 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:51:19,444 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:51:21,358 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:51:28,680 -  - sessionId=17bvw8e26hz11
+[zaetoon] - 2011-07-02 12:51:28,688 - anonymousUser - sessionId=19ptj0y713wu1 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:51:28,688 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:51:29,736 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:51:46,962 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:52:00,499 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:52:06,612 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:52:22,089 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:55:30,213 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:55:32,973 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:55:35,719 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:55:51,598 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 12:55:51,598 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 12:55:51,600 -  - sessionId=3jwke1o3ul70
+[zaetoon] - 2011-07-02 12:55:51,600 -  - sessionId=1sepgz98gaq5u maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:56:34,094 -  - sessionId=1sepgz98gaq5u
+[zaetoon] - 2011-07-02 12:56:34,119 - anonymousUser - sessionId=1r8ukxqbkf9n2 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:56:34,120 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:56:36,442 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:56:54,575 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:57:01,661 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:57:10,548 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:57:16,609 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:57:22,528 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:57:30,211 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:57:39,737 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:57:50,381 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 12:58:09,530 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 12:58:09,531 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 12:58:09,532 -  - sessionId=19ptj0y713wu1
+[zaetoon] - 2011-07-02 12:58:09,533 -  - sessionId=1w0622xfwncya maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 12:58:19,884 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 12:58:19,885 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 12:58:19,886 -  - sessionId=1r8ukxqbkf9n2
+[zaetoon] - 2011-07-02 12:58:19,886 -  - sessionId=hcn00t9zvo94 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 13:26:00,139 - admin - 
+    /* criteria query */ select
+        this_.username as username1_0_,
+        this_.enabled as enabled1_0_,
+        this_.password as password1_0_ 
+    from
+        users this_ 
+    where
+        (
+            lower(this_.username) like ? 
+            and (
+                1=1
+            )
+        ) limit ?
+[zaetoon] - 2011-07-02 13:28:44,573 -  - sessionId=hcn00t9zvo94
+[zaetoon] - 2011-07-02 14:17:58,209 -  - sessionId=1w0622xfwncya
+[zaetoon] - 2011-07-02 14:17:58,216 - anonymousUser - sessionId=1ty5lgwgb8qic maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 14:17:58,216 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:18:00,468 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:18:04,868 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 14:18:04,869 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 14:18:04,870 -  - sessionId=1ty5lgwgb8qic
+[zaetoon] - 2011-07-02 14:18:04,870 -  - sessionId=1gsc6l2v65ajb maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 14:22:41,388 - anonymousUser - sessionId=oppsgu4tm7ya maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 14:22:41,388 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:23:00,513 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 14:23:00,513 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 14:23:00,514 -  - sessionId=oppsgu4tm7ya
+[zaetoon] - 2011-07-02 14:23:00,514 -  - sessionId=p98szo1ur3vi maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 14:23:14,996 -  - sessionId=p98szo1ur3vi
+[zaetoon] - 2011-07-02 14:23:15,414 - anonymousUser - sessionId=f4uoic076uyg maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 14:23:15,416 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:23:18,884 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:23:34,228 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 14:23:34,229 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 14:23:34,231 -  - sessionId=f4uoic076uyg
+[zaetoon] - 2011-07-02 14:23:34,231 -  - sessionId=1kjtkvzytqp9c maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 14:23:43,001 -  - sessionId=1kjtkvzytqp9c
+[zaetoon] - 2011-07-02 14:23:43,032 - anonymousUser - sessionId=1rqnooefyjl2j maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 14:23:43,032 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:34:20,595 -  - sessionId=1gsc6l2v65ajb
+[zaetoon] - 2011-07-02 14:34:20,599 - anonymousUser - sessionId=1mys0xpepwp87 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 14:34:20,599 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:34:23,328 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:44:33,952 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:45:25,600 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:46:10,803 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 14:46:10,804 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 14:46:10,806 -  - sessionId=1mys0xpepwp87
+[zaetoon] - 2011-07-02 14:46:10,806 -  - sessionId=1xzwopupt0p2z maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 14:49:11,174 -  - sessionId=1xzwopupt0p2z
+[zaetoon] - 2011-07-02 14:49:11,179 - anonymousUser - sessionId=18glzos3wdswo maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 14:49:11,179 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:49:12,730 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:49:46,452 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 14:49:46,453 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 14:49:46,454 -  - sessionId=18glzos3wdswo
+[zaetoon] - 2011-07-02 14:49:46,454 -  - sessionId=z7r0eey618tw maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 14:50:27,506 -  - sessionId=z7r0eey618tw
+[zaetoon] - 2011-07-02 14:50:27,512 - anonymousUser - sessionId=mz0hiuzb93ou maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 14:50:27,513 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:50:28,820 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:51:09,475 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 14:51:09,476 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 14:51:09,477 -  - sessionId=mz0hiuzb93ou
+[zaetoon] - 2011-07-02 14:51:09,477 -  - sessionId=1odhere9fqbxd maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 14:51:42,891 -  - sessionId=1odhere9fqbxd
+[zaetoon] - 2011-07-02 14:51:42,899 - anonymousUser - sessionId=csryhv3jycno maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 14:51:42,899 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:51:49,759 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:51:56,365 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 14:51:56,367 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 14:51:56,369 -  - sessionId=csryhv3jycno
+[zaetoon] - 2011-07-02 14:51:56,370 -  - sessionId=1c59jszqos8ly maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 14:52:52,151 -  - sessionId=1c59jszqos8ly
+[zaetoon] - 2011-07-02 14:52:52,155 - anonymousUser - sessionId=fipq2q77zful maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 14:52:52,155 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:52:54,795 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:53:00,110 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 14:53:00,111 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 14:53:00,112 -  - sessionId=fipq2q77zful
+[zaetoon] - 2011-07-02 14:53:00,112 -  - sessionId=akw12u9vmcwq maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 14:53:37,942 -  - sessionId=akw12u9vmcwq
+[zaetoon] - 2011-07-02 14:53:37,946 - anonymousUser - sessionId=1dtjeek22wsxi maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 14:53:37,947 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:53:39,506 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:53:43,955 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 14:53:43,956 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 14:53:43,957 -  - sessionId=1dtjeek22wsxi
+[zaetoon] - 2011-07-02 14:53:43,958 -  - sessionId=s18bjjfqewg6 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 14:53:44,611 -  - sessionId=1rqnooefyjl2j
+[zaetoon] - 2011-07-02 14:58:39,860 -  - sessionId=s18bjjfqewg6
+[zaetoon] - 2011-07-02 14:58:39,868 - anonymousUser - sessionId=4u19jhduft24 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 14:58:39,869 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:58:40,859 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:58:45,666 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 14:58:45,667 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 14:58:45,668 -  - sessionId=4u19jhduft24
+[zaetoon] - 2011-07-02 14:58:45,668 -  - sessionId=4afu5fkorler maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 14:59:06,614 -  - sessionId=4afu5fkorler
+[zaetoon] - 2011-07-02 14:59:06,618 - anonymousUser - sessionId=16bieeeq9ult1 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 14:59:06,618 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:59:07,425 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:59:12,862 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 14:59:12,863 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 14:59:12,864 -  - sessionId=16bieeeq9ult1
+[zaetoon] - 2011-07-02 14:59:12,864 -  - sessionId=x3bftddw3tt1 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 14:59:39,548 -  - sessionId=x3bftddw3tt1
+[zaetoon] - 2011-07-02 14:59:39,553 - anonymousUser - sessionId=eoad9z6qw8wc maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 14:59:39,554 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:59:40,370 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 14:59:45,778 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 14:59:45,780 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 14:59:45,780 -  - sessionId=eoad9z6qw8wc
+[zaetoon] - 2011-07-02 14:59:45,781 -  - sessionId=1rxkhodnm0x3v maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:00:51,745 - anonymousUser - sessionId=1xgpce9djgyea maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:00:51,745 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:00:57,592 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:01:13,346 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 15:01:13,346 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 15:01:13,347 -  - sessionId=1xgpce9djgyea
+[zaetoon] - 2011-07-02 15:01:13,348 -  - sessionId=1knvo1ud98780 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:01:17,345 - anonymousUser - sessionId=xzrd6r5tw72o maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:01:17,345 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:02:20,267 -  - sessionId=1rxkhodnm0x3v
+[zaetoon] - 2011-07-02 15:02:20,271 - anonymousUser - sessionId=ddyaynxjqp5j maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:02:20,272 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:02:21,724 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:02:44,324 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:03:34,511 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:05:18,840 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:05:43,725 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:06:35,825 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:07:02,351 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:10:02,376 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:10:11,199 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:10:19,307 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:10:26,312 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 15:10:26,313 -  - 
+    /* criteria query */ select
+        this_.username as username1_0_,
+        this_.enabled as enabled1_0_,
+        this_.password as password1_0_ 
+    from
+        users this_ 
+    where
+        (
+            lower(this_.username) like ? 
+            and (
+                1=1
+            )
+        ) limit ?
+[zaetoon] - 2011-07-02 15:10:26,314 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 15:10:26,315 -  - sessionId=ddyaynxjqp5j
+[zaetoon] - 2011-07-02 15:10:26,315 -  - sessionId=hq3w0nit3amm maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:10:43,311 -  - sessionId=hq3w0nit3amm
+[zaetoon] - 2011-07-02 15:10:43,316 - anonymousUser - sessionId=r0aw1s2uzoz8 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:10:43,316 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:10:48,505 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:10:54,230 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 15:10:54,231 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 15:10:54,232 -  - sessionId=r0aw1s2uzoz8
+[zaetoon] - 2011-07-02 15:10:54,232 -  - sessionId=1k74fgwuxgo4u maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:11:05,777 -  - sessionId=1k74fgwuxgo4u
+[zaetoon] - 2011-07-02 15:11:05,781 - anonymousUser - sessionId=cwesvpdro1bq maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:11:05,781 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:11:08,530 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:11:12,286 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 15:11:12,287 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 15:11:12,289 -  - sessionId=cwesvpdro1bq
+[zaetoon] - 2011-07-02 15:11:12,289 -  - sessionId=17e2h2ylhvc6s maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:11:22,548 -  - sessionId=17e2h2ylhvc6s
+[zaetoon] - 2011-07-02 15:11:22,551 - anonymousUser - sessionId=1pt8u134mwqvv maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:11:22,551 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:11:24,418 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:11:28,220 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 15:11:28,221 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 15:11:28,222 -  - sessionId=1pt8u134mwqvv
+[zaetoon] - 2011-07-02 15:11:28,222 -  - sessionId=1cshfti9tym10 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:11:34,700 -  - sessionId=1cshfti9tym10
+[zaetoon] - 2011-07-02 15:11:34,708 - anonymousUser - sessionId=1ikdz4hxesal maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:11:34,708 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:11:37,354 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:11:41,185 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 15:11:41,186 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 15:11:41,187 -  - sessionId=1ikdz4hxesal
+[zaetoon] - 2011-07-02 15:11:41,187 -  - sessionId=14vffza0yxeo9 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:11:48,073 -  - sessionId=14vffza0yxeo9
+[zaetoon] - 2011-07-02 15:11:48,076 - anonymousUser - sessionId=zedqqc6t46s0 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:11:48,077 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:11:50,338 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:12:00,042 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 15:12:00,043 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 15:12:00,043 -  - sessionId=zedqqc6t46s0
+[zaetoon] - 2011-07-02 15:12:00,044 -  - sessionId=1idd97d625wy6 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:12:53,113 -  - sessionId=1idd97d625wy6
+[zaetoon] - 2011-07-02 15:12:53,116 - anonymousUser - sessionId=1wx9rkz4g4b0f maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:12:53,117 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:12:55,466 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:13:00,278 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 15:13:00,279 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 15:13:00,280 -  - sessionId=1wx9rkz4g4b0f
+[zaetoon] - 2011-07-02 15:13:00,280 -  - sessionId=1q9rg38r0lqr8 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:13:08,818 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:13:12,916 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:13:24,997 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 15:13:24,998 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 15:13:25,000 -  - sessionId=xzrd6r5tw72o
+[zaetoon] - 2011-07-02 15:13:25,000 -  - sessionId=1iifcz4l70ht0 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:13:54,097 -  - sessionId=1iifcz4l70ht0
+[zaetoon] - 2011-07-02 15:13:54,329 - anonymousUser - sessionId=wnt8ysv88hrm maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:13:54,329 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:13:57,248 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:14:05,547 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 15:14:05,548 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 15:14:05,549 -  - sessionId=wnt8ysv88hrm
+[zaetoon] - 2011-07-02 15:14:05,549 -  - sessionId=nr8weuycxf9e maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:15:42,582 -  - sessionId=1q9rg38r0lqr8
+[zaetoon] - 2011-07-02 15:15:42,583 -  - sessionId=1knvo1ud98780
+[zaetoon] - 2011-07-02 15:15:42,583 -  - sessionId=nr8weuycxf9e
+[zaetoon] - 2011-07-02 15:15:42,583 -  - Servlet Context destroyed...
+[zaetoon] - 2011-07-02 15:16:41,262 -  - get returned null with pk=101
+[zaetoon] - 2011-07-02 15:16:41,348 -  - findCount returned null!
+[zaetoon] - 2011-07-02 15:16:46,541 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Users
+        */ insert 
+        into
+            users
+            (enabled, password, username) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-02 15:16:46,585 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Users */ select
+        users0_.username as username4_0_,
+        users0_.enabled as enabled4_0_,
+        users0_.password as password4_0_ 
+    from
+        users users0_ 
+    where
+        users0_.username=?
+[zaetoon] - 2011-07-02 15:16:46,630 -  - get returned null with pk=101
+[zaetoon] - 2011-07-02 15:16:46,644 -  - findCount returned null!
+[zaetoon] - 2011-07-02 15:16:46,725 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Users
+        */ insert 
+        into
+            users
+            (enabled, password, username) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-02 15:16:46,729 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Authorities
+        */ insert 
+        into
+            authorities
+            (authority, username) 
+        values
+            (?, ?)
+[zaetoon] - 2011-07-02 15:16:46,731 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Authorities */ select
+        authoritie0_.username as username2_0_,
+        authoritie0_.authority as authority2_0_ 
+    from
+        authorities authoritie0_ 
+    where
+        authoritie0_.username=?
+[zaetoon] - 2011-07-02 15:16:46,770 -  - 
+    /* Named query Users.selectAll */ select
+        users0_.username as username4_,
+        users0_.enabled as enabled4_,
+        users0_.password as password4_ 
+    from
+        users users0_ 
+    where
+        1=1 limit ?
+[zaetoon] - 2011-07-02 15:16:46,784 -  - 
+    /* Named query Users.selectAll.native */ select
+        {account.*} 
+    from
+        users limit ?
+[zaetoon] - 2011-07-02 15:16:46,806 -  - SQL Error: 1064, SQLState: 42000
+[zaetoon] - 2011-07-02 15:16:46,806 -  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from users limit 500' at line 1
+[zaetoon] - 2011-07-02 15:16:46,852 -  - get returned null with pk=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah
+[zaetoon] - 2011-07-02 15:16:46,861 -  - findCount returned null!
+[zaetoon] - 2011-07-02 15:16:46,908 -  - get returned null with pk=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaal
+[zaetoon] - 2011-07-02 15:16:46,916 -  - findCount returned null!
+[zaetoon] - 2011-07-02 15:16:46,928 -  - get returned null with pk=101
+[zaetoon] - 2011-07-02 15:16:46,936 -  - findCount returned null!
+[zaetoon] - 2011-07-02 15:16:47,093 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserProfile
+[zaetoon] - 2011-07-02 15:16:47,108 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserProfile
+        */ insert 
+        into
+            user_profile
+            (city, country, first_name, last_name, title) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-02 15:16:47,121 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.ProgramStructure
+[zaetoon] - 2011-07-02 15:16:47,122 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.ProgramStructure
+        */ insert 
+        into
+            program_structure
+            (category, days, description, name, prerequisites) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-02 15:16:47,127 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserGraduation
+[zaetoon] - 2011-07-02 15:16:47,135 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserGraduation
+        */ insert 
+        into
+            user_graduation
+            (graduation_date, program_structure_id, title, user_id) 
+        values
+            (?, ?, ?, ?)
+[zaetoon] - 2011-07-02 15:16:47,144 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserGraduation */ select
+        usergradua0_.id as id6_0_,
+        usergradua0_.graduation_date as graduation2_6_0_,
+        usergradua0_.program_structure_id as program3_6_0_,
+        usergradua0_.title as title6_0_,
+        usergradua0_.user_id as user5_6_0_ 
+    from
+        user_graduation usergradua0_ 
+    where
+        usergradua0_.id=?
+[zaetoon] - 2011-07-02 15:16:47,213 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.Program
+[zaetoon] - 2011-07-02 15:16:47,216 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.Program
+        */ insert 
+        into
+            program
+            (program_structure_id, start_date, status) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-02 15:16:47,218 -  - 
+    /* load com.bizintelapps.zaetoon.domain.Program */ select
+        program0_.id as id5_0_,
+        program0_.program_structure_id as program2_5_0_,
+        program0_.start_date as start3_5_0_,
+        program0_.status as status5_0_ 
+    from
+        program program0_ 
+    where
+        program0_.id=?
+[zaetoon] - 2011-07-02 15:16:47,265 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserEnrollment
+[zaetoon] - 2011-07-02 15:16:47,268 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserEnrollment
+        */ insert 
+        into
+            user_enrollment
+            (program_id, result, user_id) 
+        values
+            (?, ?, ?)
+[zaetoon] - 2011-07-02 15:16:47,271 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserEnrollment */ select
+        userenroll0_.id as id3_0_,
+        userenroll0_.program_id as program2_3_0_,
+        userenroll0_.result as result3_0_,
+        userenroll0_.user_id as user4_3_0_ 
+    from
+        user_enrollment userenroll0_ 
+    where
+        userenroll0_.id=?
+[zaetoon] - 2011-07-02 15:16:47,295 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.ProgramStructure
+[zaetoon] - 2011-07-02 15:16:47,296 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.ProgramStructure
+        */ insert 
+        into
+            program_structure
+            (category, days, description, name, prerequisites) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-02 15:16:47,303 -  - 
+    /* load com.bizintelapps.zaetoon.domain.ProgramStructure */ select
+        programstr0_.id as id1_0_,
+        programstr0_.category as category1_0_,
+        programstr0_.days as days1_0_,
+        programstr0_.description as descript4_1_0_,
+        programstr0_.name as name1_0_,
+        programstr0_.prerequisites as prerequi6_1_0_ 
+    from
+        program_structure programstr0_ 
+    where
+        programstr0_.id=?
+[zaetoon] - 2011-07-02 15:16:47,355 -  - DEVELOPER: hashCode has changed!.If you encounter this message you should take the time to carefuly review equals/hashCode for: com.bizintelapps.zaetoon.domain.UserProfile
+[zaetoon] - 2011-07-02 15:16:47,357 -  - 
+    /* insert com.bizintelapps.zaetoon.domain.UserProfile
+        */ insert 
+        into
+            user_profile
+            (city, country, first_name, last_name, title) 
+        values
+            (?, ?, ?, ?, ?)
+[zaetoon] - 2011-07-02 15:16:47,360 -  - 
+    /* load com.bizintelapps.zaetoon.domain.UserProfile */ select
+        userprofil0_.id as id0_0_,
+        userprofil0_.city as city0_0_,
+        userprofil0_.country as country0_0_,
+        userprofil0_.first_name as first4_0_0_,
+        userprofil0_.last_name as last5_0_0_,
+        userprofil0_.title as title0_0_ 
+    from
+        user_profile userprofil0_ 
+    where
+        userprofil0_.id=?
+[zaetoon] - 2011-07-02 15:16:47,373 -  - get returned null with pk=101
+[zaetoon] - 2011-07-02 15:16:47,393 -  - findCount returned null!
+[zaetoon] - 2011-07-02 15:16:47,455 -  - get returned null with pk=101
+[zaetoon] - 2011-07-02 15:16:47,486 -  - findCount returned null!
+[zaetoon] - 2011-07-02 15:17:01,591 -  - Servlet Context initialized...
+[zaetoon] - 2011-07-02 15:17:27,310 -  - Registering converter com.bizintelapps.zaetoon.converter.DateConverter@6971770
+[zaetoon] - 2011-07-02 15:17:27,333 -  - Registering annotation formatter EnumFormatterAnnotationFactory
+[zaetoon] - 2011-07-02 15:17:27,334 -  - Registering annotation formatter FileSizeFormatterAnnotationFactory
+[zaetoon] - 2011-07-02 15:17:27,334 -  - Registering formatter Authorities
+[zaetoon] - 2011-07-02 15:17:27,334 -  - Registering formatter Program
+[zaetoon] - 2011-07-02 15:17:27,334 -  - Registering formatter ProgramStructure
+[zaetoon] - 2011-07-02 15:17:27,334 -  - Registering formatter UserEnrollment
+[zaetoon] - 2011-07-02 15:17:27,335 -  - Registering formatter UserGraduation
+[zaetoon] - 2011-07-02 15:17:27,335 -  - Registering formatter UserProfile
+[zaetoon] - 2011-07-02 15:17:27,335 -  - Registering formatter Users
+[zaetoon] - 2011-07-02 15:17:27,336 -  - Registering default enum formatter for NullRestrictionKind
+[zaetoon] - 2011-07-02 15:17:27,337 -  - Registering default enum formatter for OrderByDirection
+[zaetoon] - 2011-07-02 15:17:27,337 -  - Registering default enum formatter for SearchMode
+[zaetoon] - 2011-07-02 15:17:29,673 -  - Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+[zaetoon] - 2011-07-02 15:17:29,908 - anonymousUser - sessionId=idkog1xv7pxn maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:17:29,909 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:17:38,584 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:17:43,759 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 15:17:43,788 -  - 
+    /* criteria query */ select
+        this_.username as username3_0_,
+        this_.enabled as enabled3_0_,
+        this_.password as password3_0_ 
+    from
+        users this_ 
+    where
+        (
+            lower(this_.username) like ? 
+            and (
+                1=1
+            )
+        ) limit ?
+[zaetoon] - 2011-07-02 15:17:43,818 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 15:17:43,825 -  - sessionId=idkog1xv7pxn
+[zaetoon] - 2011-07-02 15:17:43,825 -  - sessionId=tujesbhqy5z maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:17:49,386 -  - sessionId=tujesbhqy5z
+[zaetoon] - 2011-07-02 15:17:49,390 - anonymousUser - sessionId=1nzsowdtu9r9p maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:17:49,390 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:17:52,361 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:17:56,747 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 15:17:56,748 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 15:17:56,748 -  - sessionId=1nzsowdtu9r9p
+[zaetoon] - 2011-07-02 15:17:56,749 -  - sessionId=qdery24krru5 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:24:20,271 -  - sessionId=s6b2f1fbo23u maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:24:20,362 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:24:32,344 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 15:24:32,346 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 15:24:32,348 -  - sessionId=s6b2f1fbo23u
+[zaetoon] - 2011-07-02 15:24:32,348 -  - sessionId=9b62n9x24hdy maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:35:25,844 -  - sessionId=9b62n9x24hdy
+[zaetoon] - 2011-07-02 15:35:25,913 - anonymousUser - sessionId=vqzp8f0ax89x maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:35:25,913 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:35:38,260 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 15:35:58,019 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 15:35:58,020 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 15:35:58,021 -  - sessionId=vqzp8f0ax89x
+[zaetoon] - 2011-07-02 15:35:58,021 -  - sessionId=1wlbwinkjddgi maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 15:52:26,326 -  - sessionId=qdery24krru5
+[zaetoon] - 2011-07-02 16:06:26,328 -  - sessionId=1wlbwinkjddgi
+[zaetoon] - 2011-07-02 19:30:27,626 -  - sessionId=j2a07ymyaq30 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 19:30:27,651 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 19:30:45,235 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 19:30:45,236 -  - 
+    /* criteria query */ select
+        this_.username as username3_0_,
+        this_.enabled as enabled3_0_,
+        this_.password as password3_0_ 
+    from
+        users this_ 
+    where
+        (
+            lower(this_.username) like ? 
+            and (
+                1=1
+            )
+        ) limit ?
+[zaetoon] - 2011-07-02 19:30:45,238 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 19:30:45,239 -  - sessionId=j2a07ymyaq30
+[zaetoon] - 2011-07-02 19:30:45,239 -  - sessionId=1kmatjb4b41vv maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 19:40:51,124 -  - sessionId=1kmatjb4b41vv
+[zaetoon] - 2011-07-02 19:40:51,152 - anonymousUser - sessionId=1l7bug47uf891 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 19:40:51,152 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 19:40:53,473 - anonymousUser - No user details
+[zaetoon] - 2011-07-02 19:41:03,926 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-02 19:41:03,928 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-02 19:41:03,929 -  - sessionId=1l7bug47uf891
+[zaetoon] - 2011-07-02 19:41:03,929 -  - sessionId=gjpgzy4pmf7t maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-02 20:11:26,534 -  - sessionId=gjpgzy4pmf7t
+[zaetoon] - 2011-07-09 12:12:03,546 -  - sessionId=1e3z0jn47afif maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-09 12:12:03,551 - anonymousUser - No user details
+[zaetoon] - 2011-07-09 12:12:16,649 -  - Security verification for user 'mdshannan@gmail.com'
+[zaetoon] - 2011-07-09 12:12:16,650 -  - 
+    /* criteria query */ select
+        this_.username as username3_0_,
+        this_.enabled as enabled3_0_,
+        this_.password as password3_0_ 
+    from
+        users this_ 
+    where
+        (
+            lower(this_.username) like ? 
+            and (
+                1=1
+            )
+        ) limit ?
+[zaetoon] - 2011-07-09 12:12:16,651 -  - Account mdshannan@gmail.com could not be found
+[zaetoon] - 2011-07-09 12:12:16,659 - anonymousUser - No user details
+[zaetoon] - 2011-07-09 12:12:25,388 -  - Security verification for user 'shannan'
+[zaetoon] - 2011-07-09 12:12:25,389 -  - 
+    /* criteria query */ select
+        this_.username as username3_0_,
+        this_.enabled as enabled3_0_,
+        this_.password as password3_0_ 
+    from
+        users this_ 
+    where
+        (
+            lower(this_.username) like ? 
+            and (
+                1=1
+            )
+        ) limit ?
+[zaetoon] - 2011-07-09 12:12:25,390 -  - Account shannan could not be found
+[zaetoon] - 2011-07-09 12:12:25,396 - anonymousUser - No user details
+[zaetoon] - 2011-07-09 12:13:47,918 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-09 12:13:47,919 -  - 
+    /* criteria query */ select
+        this_.username as username3_0_,
+        this_.enabled as enabled3_0_,
+        this_.password as password3_0_ 
+    from
+        users this_ 
+    where
+        (
+            lower(this_.username) like ? 
+            and (
+                1=1
+            )
+        ) limit ?
+[zaetoon] - 2011-07-09 12:13:47,920 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-09 12:13:47,921 -  - sessionId=1e3z0jn47afif
+[zaetoon] - 2011-07-09 12:13:47,922 -  - sessionId=1emy5ix0awcn2 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-09 12:20:51,620 -  - sessionId=1emy5ix0awcn2
+[zaetoon] - 2011-07-09 12:20:51,621 -  - Servlet Context destroyed...
+[zaetoon] - 2011-07-09 20:14:38,050 -  - Servlet Context initialized...
+[zaetoon] - 2011-07-09 20:15:06,073 -  - Registering converter com.bizintelapps.zaetoon.converter.DateConverter@bb081e3
+[zaetoon] - 2011-07-09 20:15:06,075 -  - Registering annotation formatter EnumFormatterAnnotationFactory
+[zaetoon] - 2011-07-09 20:15:06,075 -  - Registering annotation formatter FileSizeFormatterAnnotationFactory
+[zaetoon] - 2011-07-09 20:15:06,075 -  - Registering formatter Authorities
+[zaetoon] - 2011-07-09 20:15:06,076 -  - Registering formatter Program
+[zaetoon] - 2011-07-09 20:15:06,076 -  - Registering formatter ProgramStructure
+[zaetoon] - 2011-07-09 20:15:06,076 -  - Registering formatter UserEnrollment
+[zaetoon] - 2011-07-09 20:15:06,077 -  - Registering formatter UserGraduation
+[zaetoon] - 2011-07-09 20:15:06,079 -  - Registering formatter UserProfile
+[zaetoon] - 2011-07-09 20:15:06,079 -  - Registering formatter Users
+[zaetoon] - 2011-07-09 20:15:06,081 -  - Registering default enum formatter for NullRestrictionKind
+[zaetoon] - 2011-07-09 20:15:06,082 -  - Registering default enum formatter for OrderByDirection
+[zaetoon] - 2011-07-09 20:15:06,083 -  - Registering default enum formatter for SearchMode
+[zaetoon] - 2011-07-09 20:15:09,256 -  - Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+[zaetoon] - 2011-07-09 20:15:09,497 - anonymousUser - sessionId=a4180b9fcnln maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-09 20:15:09,539 - anonymousUser - No user details
+[zaetoon] - 2011-07-09 20:15:19,089 - anonymousUser - sessionId=pk2vlk5bcivw maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-09 20:15:19,089 - anonymousUser - No user details
+[zaetoon] - 2011-07-09 20:15:27,682 - anonymousUser - No user details
+[zaetoon] - 2011-07-09 20:15:33,266 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-09 20:15:33,322 -  - 
+    /* criteria query */ select
+        this_.username as username1_0_,
+        this_.enabled as enabled1_0_,
+        this_.password as password1_0_ 
+    from
+        users this_ 
+    where
+        (
+            lower(this_.username) like ? 
+            and (
+                1=1
+            )
+        ) limit ?
+[zaetoon] - 2011-07-09 20:15:33,354 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-09 20:15:33,366 -  - sessionId=pk2vlk5bcivw
+[zaetoon] - 2011-07-09 20:15:33,367 -  - sessionId=mgle3do0zw0c maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-09 20:15:38,546 - anonymousUser - No user details
+[zaetoon] - 2011-07-09 20:15:46,567 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-09 20:15:46,568 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-09 20:15:46,569 -  - sessionId=a4180b9fcnln
+[zaetoon] - 2011-07-09 20:15:46,570 -  - sessionId=e7g1ypg3b9j4 maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-09 20:20:35,725 -  - sessionId=e7g1ypg3b9j4
+[zaetoon] - 2011-07-09 20:20:35,734 - anonymousUser - sessionId=17x2zyywo1yao maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-09 20:20:35,734 - anonymousUser - No user details
+[zaetoon] - 2011-07-09 20:20:37,636 - anonymousUser - No user details
+[zaetoon] - 2011-07-09 20:20:39,793 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-09 20:20:39,795 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-09 20:20:39,796 -  - sessionId=17x2zyywo1yao
+[zaetoon] - 2011-07-09 20:20:39,796 -  - sessionId=klciajhrvnwz maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-10 18:12:01,816 -  - sessionId=mgle3do0zw0c
+[zaetoon] - 2011-07-10 18:12:01,817 -  - sessionId=klciajhrvnwz
+[zaetoon] - 2011-07-10 19:07:16,958 -  - Servlet Context destroyed...
+[zaetoon] - 2011-07-11 20:34:30,242 -  - Servlet Context initialized...
+[zaetoon] - 2011-07-11 20:34:59,195 -  - Registering converter com.bizintelapps.zaetoon.converter.DateConverter@46b98117
+[zaetoon] - 2011-07-11 20:34:59,204 -  - Registering annotation formatter EnumFormatterAnnotationFactory
+[zaetoon] - 2011-07-11 20:34:59,204 -  - Registering annotation formatter FileSizeFormatterAnnotationFactory
+[zaetoon] - 2011-07-11 20:34:59,205 -  - Registering formatter Authorities
+[zaetoon] - 2011-07-11 20:34:59,205 -  - Registering formatter Program
+[zaetoon] - 2011-07-11 20:34:59,205 -  - Registering formatter ProgramStructure
+[zaetoon] - 2011-07-11 20:34:59,206 -  - Registering formatter UserEnrollment
+[zaetoon] - 2011-07-11 20:34:59,211 -  - Registering formatter UserGraduation
+[zaetoon] - 2011-07-11 20:34:59,211 -  - Registering formatter UserProfile
+[zaetoon] - 2011-07-11 20:34:59,212 -  - Registering formatter Users
+[zaetoon] - 2011-07-11 20:34:59,214 -  - Registering default enum formatter for NullRestrictionKind
+[zaetoon] - 2011-07-11 20:34:59,215 -  - Registering default enum formatter for OrderByDirection
+[zaetoon] - 2011-07-11 20:34:59,215 -  - Registering default enum formatter for SearchMode
+[zaetoon] - 2011-07-11 20:35:02,108 -  - Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+[zaetoon] - 2011-07-11 20:35:02,359 - anonymousUser - sessionId=1sa4cffcn8vq maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-11 20:35:02,363 - anonymousUser - No user details
+[zaetoon] - 2011-07-11 20:35:19,724 - anonymousUser - No user details
+[zaetoon] - 2011-07-11 20:35:23,574 - anonymousUser - No user details
+[zaetoon] - 2011-07-11 20:38:15,067 -  - sessionId=1sa4cffcn8vq
+[zaetoon] - 2011-07-11 20:38:15,068 -  - Servlet Context destroyed...
+[zaetoon] - 2011-07-11 20:38:59,842 -  - Servlet Context initialized...
+[zaetoon] - 2011-07-11 20:39:08,164 -  - Registering converter com.bizintelapps.zaetoon.converter.DateConverter@609fb8b6
+[zaetoon] - 2011-07-11 20:39:08,166 -  - Registering annotation formatter EnumFormatterAnnotationFactory
+[zaetoon] - 2011-07-11 20:39:08,166 -  - Registering annotation formatter FileSizeFormatterAnnotationFactory
+[zaetoon] - 2011-07-11 20:39:08,167 -  - Registering formatter Authorities
+[zaetoon] - 2011-07-11 20:39:08,167 -  - Registering formatter Program
+[zaetoon] - 2011-07-11 20:39:08,167 -  - Registering formatter ProgramStructure
+[zaetoon] - 2011-07-11 20:39:08,168 -  - Registering formatter UserEnrollment
+[zaetoon] - 2011-07-11 20:39:08,168 -  - Registering formatter UserGraduation
+[zaetoon] - 2011-07-11 20:39:08,168 -  - Registering formatter UserProfile
+[zaetoon] - 2011-07-11 20:39:08,169 -  - Registering formatter Users
+[zaetoon] - 2011-07-11 20:39:08,170 -  - Registering default enum formatter for NullRestrictionKind
+[zaetoon] - 2011-07-11 20:39:08,171 -  - Registering default enum formatter for OrderByDirection
+[zaetoon] - 2011-07-11 20:39:08,171 -  - Registering default enum formatter for SearchMode
+[zaetoon] - 2011-07-11 20:39:10,216 -  - Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+[zaetoon] - 2011-07-11 20:39:10,525 - anonymousUser - sessionId=lyj7z39v796o maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-11 20:39:10,527 - anonymousUser - No user details
+[zaetoon] - 2011-07-11 20:39:23,705 - anonymousUser - No user details
+[zaetoon] - 2011-07-11 20:39:44,707 - anonymousUser - No user details
+[zaetoon] - 2011-07-11 20:39:49,934 - anonymousUser - No user details
+[zaetoon] - 2011-07-11 20:39:56,861 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-11 20:39:56,940 -  - 
+    /* criteria query */ select
+        this_.username as username6_0_,
+        this_.enabled as enabled6_0_,
+        this_.password as password6_0_ 
+    from
+        users this_ 
+    where
+        (
+            lower(this_.username) like ? 
+            and (
+                1=1
+            )
+        ) limit ?
+[zaetoon] - 2011-07-11 20:39:56,998 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-11 20:39:57,006 -  - sessionId=lyj7z39v796o
+[zaetoon] - 2011-07-11 20:39:57,007 -  - sessionId=k9vwva9tm95s maxInactiveInterval=1800 seconds
+[zaetoon] - 2011-07-11 20:50:53,707 -  - sessionId=k9vwva9tm95s
+[zaetoon] - 2011-07-11 20:50:53,707 -  - Servlet Context destroyed...
+[zaetoon] - 2011-07-11 20:51:52,640 -  - Servlet Context initialized...
+[zaetoon] - 2011-07-11 20:58:08,096 -  - Registering converter com.bizintelapps.zaetoon.converter.DateConverter@38688aeb
+[zaetoon] - 2011-07-11 20:58:08,155 -  - Registering annotation formatter EnumFormatterAnnotationFactory
+[zaetoon] - 2011-07-11 20:58:08,156 -  - Registering annotation formatter FileSizeFormatterAnnotationFactory
+[zaetoon] - 2011-07-11 20:58:08,156 -  - Registering formatter Authorities
+[zaetoon] - 2011-07-11 20:58:08,156 -  - Registering formatter Program
+[zaetoon] - 2011-07-11 20:58:08,156 -  - Registering formatter ProgramStructure
+[zaetoon] - 2011-07-11 20:58:08,157 -  - Registering formatter UserEnrollment
+[zaetoon] - 2011-07-11 20:58:08,157 -  - Registering formatter UserGraduation
+[zaetoon] - 2011-07-11 20:58:08,157 -  - Registering formatter UserProfile
+[zaetoon] - 2011-07-11 20:58:08,157 -  - Registering formatter Users
+[zaetoon] - 2011-07-11 20:58:08,160 -  - Registering default enum formatter for NullRestrictionKind
+[zaetoon] - 2011-07-11 20:58:08,162 -  - Registering default enum formatter for OrderByDirection
+[zaetoon] - 2011-07-11 20:58:08,165 -  - Registering default enum formatter for SearchMode
+[zaetoon] - 2011-07-11 20:58:11,772 -  - Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+[zaetoon] - 2011-07-11 20:58:12,004 - anonymousUser - sessionId=1on8sg0aq6l12 maxInactiveInterval=3600 seconds
+[zaetoon] - 2011-07-11 20:58:12,006 - anonymousUser - No user details
+[zaetoon] - 2011-07-11 20:59:44,083 -  - sessionId=1on8sg0aq6l12
+[zaetoon] - 2011-07-11 20:59:44,083 -  - Servlet Context destroyed...
+[zaetoon] - 2011-07-11 21:00:02,290 -  - Servlet Context initialized...
+[zaetoon] - 2011-07-11 21:00:31,958 -  - Registering converter com.bizintelapps.zaetoon.converter.DateConverter@58070f11
+[zaetoon] - 2011-07-11 21:00:31,995 -  - Registering annotation formatter EnumFormatterAnnotationFactory
+[zaetoon] - 2011-07-11 21:00:31,995 -  - Registering annotation formatter FileSizeFormatterAnnotationFactory
+[zaetoon] - 2011-07-11 21:00:31,995 -  - Registering formatter Authorities
+[zaetoon] - 2011-07-11 21:00:32,001 -  - Registering formatter Program
+[zaetoon] - 2011-07-11 21:00:32,001 -  - Registering formatter ProgramStructure
+[zaetoon] - 2011-07-11 21:00:32,005 -  - Registering formatter UserEnrollment
+[zaetoon] - 2011-07-11 21:00:32,006 -  - Registering formatter UserGraduation
+[zaetoon] - 2011-07-11 21:00:32,006 -  - Registering formatter UserProfile
+[zaetoon] - 2011-07-11 21:00:32,006 -  - Registering formatter Users
+[zaetoon] - 2011-07-11 21:00:32,008 -  - Registering default enum formatter for NullRestrictionKind
+[zaetoon] - 2011-07-11 21:00:32,009 -  - Registering default enum formatter for OrderByDirection
+[zaetoon] - 2011-07-11 21:00:32,009 -  - Registering default enum formatter for SearchMode
+[zaetoon] - 2011-07-11 21:00:35,144 -  - Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+[zaetoon] - 2011-07-11 21:00:35,477 - anonymousUser - sessionId=7zv2sty0x9c5 maxInactiveInterval=3600 seconds
+[zaetoon] - 2011-07-11 21:00:35,482 - anonymousUser - No user details
+[zaetoon] - 2011-07-11 21:06:14,460 -  - Deprecated public id in dwr.xml. Use: <!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN" "http://getahead.org/dwr//dwr30.dtd">
+[zaetoon] - 2011-07-11 21:06:35,887 - anonymousUser - No user details
+[zaetoon] - 2011-07-11 21:07:52,906 - anonymousUser - No user details
+[zaetoon] - 2011-07-11 21:07:58,884 -  - Security verification for user 'admin'
+[zaetoon] - 2011-07-11 21:07:58,914 -  - 
+    /* criteria query */ select
+        this_.username as username4_0_,
+        this_.enabled as enabled4_0_,
+        this_.password as password4_0_ 
+    from
+        users this_ 
+    where
+        (
+            lower(this_.username) like ? 
+            and (
+                1=1
+            )
+        ) limit ?
+[zaetoon] - 2011-07-11 21:07:58,950 -  - Returning hard coded role names. TODO: get the real role names
+[zaetoon] - 2011-07-11 21:07:58,957 -  - sessionId=7zv2sty0x9c5
+[zaetoon] - 2011-07-11 21:07:58,957 -  - sessionId=172migosovnmt maxInactiveInterval=3600 seconds
+[zaetoon] - 2011-07-11 21:09:29,098 -  - 
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.directwebremoting.impl.ExecuteAjaxFilter.doFilter(ExecuteAjaxFilter.java:34)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:472)
+	at com.bizintelapps.zaetoon.ajax.DwrFilter.doFilter(DwrFilter.java:23)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:472)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:475)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:323)
+	at org.directwebremoting.servlet.PlainCallHandler.handle(PlainCallHandler.java:52)
+	at org.directwebremoting.servlet.UrlProcessor.handle(UrlProcessor.java:101)
+	at org.directwebremoting.spring.DwrSpringServlet.doPost(DwrSpringServlet.java:173)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1166)
+	at org.springframework.web.filter.ShallowEtagHeaderFilter.doFilterInternal(ShallowEtagHeaderFilter.java:58)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:388)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:418)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:327)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:126)
+	at org.tuckey.web.filters.urlrewrite.NormalRewrittenUrl.doRewrite(NormalRewrittenUrl.java:195)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:159)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:141)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:90)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:417)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:388)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:418)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:230)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:938)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:755)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:218)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:409)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+Caused by: org.springframework.dao.InvalidDataAccessApiUsageException: Named query not found: Program.findByStatus; nested exception is java.lang.IllegalArgumentException: Named query not found: Program.findByStatus
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:286)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:104)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:368)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:58)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:213)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:163)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy62.findByStatus(Unknown Source)
+	at com.bizintelapps.zaetoon.service.ProgramServiceImpl.getEligiblePrograms(ProgramServiceImpl.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:196)
+	at $Proxy63.getEligiblePrograms(Unknown Source)
+	at com.bizintelapps.zaetoon.ajax.ProgramAjaxService.upcomingPrograms(ProgramAjaxService.java:37)
+	... 49 more
+Caused by: java.lang.IllegalArgumentException: Named query not found: Program.findByStatus
+	at org.hibernate.ejb.AbstractEntityManagerImpl.createNamedQuery(AbstractEntityManagerImpl.java:519)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:365)
+	at $Proxy55.createNamedQuery(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:240)
+	at $Proxy55.createNamedQuery(Unknown Source)
+	at com.bizintelapps.zaetoon.dao.ProgramDaoImpl.findByStatus(ProgramDaoImpl.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:309)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:155)
+	... 61 more
+[zaetoon] - 2011-07-11 21:09:29,103 -  - --Erroring: batchId[1] message[java.lang.RuntimeException: Error has occured, Please check your input and try again]

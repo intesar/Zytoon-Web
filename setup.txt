@@ -1,0 +1,51 @@
+Note: Please update this file as required
+
+Step 1:
+Required Softwares
+
+  1. JDK 1.6
+  2. Maven 2.x
+  3. SVN 
+  4. MySQL
+  5. MySQL Workbenches
+  6. Netbeans/Eclipse/IDE (Its a standard Maven Project)
+  7. Browsers (FF, Chrome, Safari, Opera, IE, Firebug) - Optional
+  8. Devices (PC, IPhone, IPad, Android, Mac, Ubuntu) - Optional
+
+Step 2:
+Checkout Project from 
+
+ https://timesheetcommunity.googlecode.com/svn/branches/branch1/Zaetoon/
+
+Step 3:
+Create Database in MySQL "zytoon"
+
+Step 4:
+Update pom.xml (line 33-34) with your local db username/password
+ <jdbc.user>root</jdbc.user>
+ <jdbc.password>apple123</jdbc.password>
+
+Step 5:
+Maven very first time, only once commands
+
+  mvn clean -U install 
+
+Step 6:
+Maven Daily use commands
+  
+   mvn jetty:run 
+    
+   ( this will start the project at http://localhost:8080 )
+   ( No need to re-run the above command for Javascript, CSS, JSP changes. only use it for Java changes)
+
+ Step 7:
+  insert data in tables
+
+    insert into zytoon.program_structure values ('1', 'Salah', '0', '0', NULL, NULL, '3', 'All prayers on time', '3 Days Salah Basic', NULL);
+    insert into zytoon.program_structure values ('2', 'Salah Basic', '0', '0', NULL, NULL, '7', 'All prayers on time', '7 Days Salaah', NULL);
+
+    // change dates if required
+    insert into zytoon.program values ( null, 1, 1, '2011-10-22');
+    insert into zytoon.program values ( null, 1, 2, '2011-10-22');
+
+

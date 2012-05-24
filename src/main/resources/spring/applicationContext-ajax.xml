@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans   xmlns="http://www.springframework.org/schema/beans"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:dwr="http://www.directwebremoting.org/schema/spring-dwr"
+         xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+         http://www.directwebremoting.org/schema/spring-dwr
+         http://www.directwebremoting.org/schema/spring-dwr/spring-dwr-3.0.xsd">
+
+    
+    <bean id="programAjaxService" class="com.bizintelapps.zytoon.ajax.ProgramAjaxService" >
+        <dwr:remote javascript="ProgramAjaxService">
+            <dwr:include method="upcomingPrograms" />
+            <dwr:include method="enroll" />
+            <dwr:include method="getUserProfile" />
+            <dwr:include method="saveUserProfile" />
+            <dwr:include method="getReports" />
+            <dwr:include method="getMyActivePrograms" />
+            <dwr:include method="submitSalah" />
+            <dwr:include method="submitFood" />
+            <dwr:include method="submitOneRuleProgram" />
+            <dwr:include method="saveBook" />
+            <dwr:include method="getBooks" />
+            <dwr:include method="getHistory" />
+            <dwr:include method="searchEmail" />
+            <dwr:include method="requestAction" />
+            <dwr:include method="requestJoinNetwork" />
+            <dwr:include method="myNetwork" />
+            <dwr:include method="sendInvite" />
+            <dwr:include method="networkingRequests" />
+            <dwr:include method="getSalahMonthly" />
+            <dwr:include method="getSalahFamily" />
+            <dwr:include method="getFoodMonthly" />
+            <dwr:include method="getFoodFamily" />
+            <dwr:include method="getUser" />
+            <dwr:include method="activateDueReports" />
+            <dwr:include method="updateExpiredPrograms"/>
+            <dwr:include method="programCeationJob" />
+            <dwr:include method="notifyDueReports" />
+            <dwr:filter class="com.bizintelapps.zytoon.ajax.DwrFilter" /> 
+        </dwr:remote>
+    </bean>
+    
+    <bean id="generalAjaxService" class="com.bizintelapps.zytoon.ajax.GeneralAjaxService" >
+        <dwr:remote javascript="GeneralAjaxService">
+            <dwr:include method="signUp" />
+            <dwr:include method="emailAccessCode" />
+            <dwr:include method="resetPassword" />
+            <dwr:include method="fbAccessToken" />
+            <dwr:filter class="com.bizintelapps.zytoon.ajax.DwrFilter" /> 
+        </dwr:remote>
+    </bean>
+    
+    <dwr:configuration>
+        <dwr:convert type="bean" class="com.bizintelapps.zytoon.domain.*" />
+        <dwr:convert type="collection"  class="java.util.*"  />
+        <dwr:convert type="exception" class="java.lang.RuntimeException" />
+        <dwr:convert class="java.lang.StackTraceElement" type="bean" />
+        
+    </dwr:configuration>
+</beans>

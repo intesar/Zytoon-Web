@@ -1,0 +1,44 @@
+<celerio xmlns="http://www.jaxio.com/schema/celerio" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jaxio.com/schema/celerio http://xsd.springfuse.com/3.0.50/celerio.xsd">
+	<configuration rootPackage="com.bizintelapps.zytoon" applicationName="zaetoon">
+		<conventions>
+			<wellKnownFolders>
+				<wellKnownFolder wellKnownFolder="JAVA" generatedFolder="src/main/java" />
+				<wellKnownFolder wellKnownFolder="JAVA_TEST" generatedFolder="src/test/java" />
+			</wellKnownFolders>
+		</conventions>
+		<generation useMavenCelerioPlugin="false" generateCacheAnnotationInEntity="true" caseSensitiveTableAndColumnAnnotations="true" />
+	</configuration>
+
+	<!-- 
+	You can control generation from here... for each entity you can fine tune each column and also relation, enums etc...
+	Please refer to the XSD for more information.
+
+	<entityConfigs>
+		<entityConfig tableName="ACCOUNT">
+			<columnConfigs>
+				<columnConfig columnName="city" fieldName="town" comment="The java property must be town" />
+				<columnConfig columnName="civility">
+					<enumConfig name="CivilityEnum" type="ORDINAL">
+						<enumValues>
+							<enumValue value="MR" label="Monsieur" />
+							<enumValue value="MS" label="Madame" />
+						</enumValues>
+					</enumConfig>
+				</columnConfig>
+			</columnConfigs>
+		</entityConfig>
+
+		<entityConfig tableName="ACCOUNT_ROLE">
+			<columnConfigs>
+				<columnConfig columnName="role_id" inverse="true" />
+			</columnConfigs>
+		</entityConfig>
+
+		<entityConfig tableName="BOOK">
+			<columnConfigs>
+				<columnConfig columnName="account_id" associationDirection="BIDIRECTIONAL" />
+			</columnConfigs>
+		</entityConfig>
+	</entityConfigs>
+	-->
+</celerio>

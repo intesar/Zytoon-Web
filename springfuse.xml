@@ -1,0 +1,86 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.bizintelapps.zytoon</groupId>
+	<artifactId>zytoon</artifactId>
+	<version>1.0.0</version>
+	<name>zytoon</name>
+	<properties>
+		<!-- specify how we can access the database to reverse -->
+		<jdbc.groupId>mysql</jdbc.groupId>
+		<jdbc.artifactId>mysql-connector-java</jdbc.artifactId>
+		<jdbc.version>5.1.6</jdbc.version>
+		<jdbc.driver>com.mysql.jdbc.Driver</jdbc.driver>
+		<jdbc.url>jdbc:mysql://localhost/zaetoon</jdbc.url>
+		<jdbc.user>root</jdbc.user>
+		<jdbc.password>apple123</jdbc.password>
+
+		<!-- Which kind of front end should springfuse generate ? -->
+		<maven-remote-generation-plugin.frontEnd>springMvc</maven-remote-generation-plugin.frontEnd>
+
+		<!-- Required only if you are behind an http proxy -->
+		<maven-remote-generation-plugin.proxy.enable>false</maven-remote-generation-plugin.proxy.enable>
+		<maven-remote-generation-plugin.proxy.host>yourproxyhost</maven-remote-generation-plugin.proxy.host>
+		<maven-remote-generation-plugin.proxy.port>8080</maven-remote-generation-plugin.proxy.port>
+		<maven-remote-generation-plugin.proxy.username>yourproxyusername</maven-remote-generation-plugin.proxy.username>
+		<maven-remote-generation-plugin.proxy.password>yourproxypassword</maven-remote-generation-plugin.proxy.password>
+
+		<!-- If your proxy is using NTML... -->
+		<maven-remote-generation-plugin.proxy.ntlm.enable>false</maven-remote-generation-plugin.proxy.ntlm.enable>
+		<maven-remote-generation-plugin.proxy.ntlm.domain>yourdomain</maven-remote-generation-plugin.proxy.ntlm.domain>
+		<maven-remote-generation-plugin.proxy.ntlm.workstation>yourcomputername</maven-remote-generation-plugin.proxy.ntlm.workstation>
+	</properties>
+	<build>
+		<defaultGoal>generate-sources</defaultGoal>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+					<execution>
+						<id>enforce-versions</id>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<requireMavenVersion>
+									<version>2.0.6</version>
+								</requireMavenVersion>
+								<requireJavaVersion>
+									<version>1.6</version>
+								</requireJavaVersion>
+							</rules>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.springfuse</groupId>
+				<artifactId>maven-springfuse-plugin</artifactId>
+				<version>3.0.50</version>
+				<executions>
+					<execution>
+						<id>Extract metadata, and produce application.</id>
+						<goals>
+							<goal>remote-generation</goal>
+						</goals>
+					</execution>
+				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>${jdbc.groupId}</groupId>
+						<artifactId>${jdbc.artifactId}</artifactId>
+						<version>${jdbc.version}</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+		</plugins>
+	</build>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>springfuse-repository</id>
+			<url>http://maven2.springfuse.com</url>
+		</pluginRepository>
+	</pluginRepositories>
+</project>
