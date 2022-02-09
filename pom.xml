@@ -40,7 +40,7 @@
 		<!-- Version dependencies when used in multiple dependencies -->
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-        <hibernate.version>3.5.5-Final</hibernate.version>
+        <hibernate.version>5.4.24.Final</hibernate.version>
         <hibernate-validator.version>4.1.0.Final</hibernate-validator.version>
 
         <spring.version>3.1.0.RC1</spring.version>
