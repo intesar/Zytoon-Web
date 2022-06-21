@@ -24,7 +24,7 @@
 		<!-- jdbc driver dependency -->
         <jdbc.groupId>mysql</jdbc.groupId>
         <jdbc.artifactId>mysql-connector-java</jdbc.artifactId>
-        <jdbc.version>5.1.6</jdbc.version>
+        <jdbc.version>8.0.28</jdbc.version>
 
 		<!-- jdbc settings -->
         <jdbc.type>mysql</jdbc.type>
